@@ -15,8 +15,13 @@ environment {
                  echo "----------- build complted ----------"
             }
         }
-     
-
+        stage("test"){
+            steps{
+                echo "------Test started-------------"
+                sh 'mvn surefire-report:report"
+                echo "------test completed----------------"
+            }
+        }
  stage('SonarQube analysis') {
     environment {
       scannerHome = tool 'valaxy-sonar-scanner'
