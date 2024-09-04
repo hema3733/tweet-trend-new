@@ -50,7 +50,7 @@ environment {
             steps{
                 script{
                     echo "-----------------------Started docker build----------------"
-                    docker build (imagename+ ":" +version)
+                    app = docker build (imagename+ ":" +version)
                     echo "----------------------docker build finished-------------------"
                     }
             }
