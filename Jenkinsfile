@@ -46,28 +46,29 @@ environment {
             }
         }   
  }
-        stage("Docker Build") {
-            steps{
-                script{
-                    echo "-----------------------Started docker build----------------"
-                    app = docker build (imagename+ ":" +version)
-                    echo "----------------------docker build finished-------------------"
-                    }
-            }
+        stage(" Docker Build ") {
+      steps {
+        script {
+           echo '<--------------- Docker Build Started --------------->'
+           app = docker.build(imageName+":"+version)
+           echo '<--------------- Docker Build Ends --------------->'
         }
-        stage("Docker Push"){
-            steps{
-                script{
-                    echo "-----------------Docker Push Started----------------------"
-                    docker.withRegistry(registry,'artifact-cred'){
+      }
+    }
+    stage (" Docker Publish "){
+        steps {
+            script {
+               echo '<--------------- Docker Publish Started --------------->'  
+                docker.withRegistry(registry, 'artifactory_token'){
                     app.push()
-                    }
-                    echo"--------------------Docker Image Pushed---------------------"
+                }    
+               echo '<--------------- Docker Publish Ended --------------->'  
             }
         }
+    } 
     }
 }
-}
+
 
 
 
