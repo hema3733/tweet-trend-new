@@ -47,15 +47,27 @@ environment {
         }   
  }
         stage("Docker Build") {
-            echo "-----------------------Started docker build----------------"
-            docker build (imagename+ ":" +version)
-            echo "----------------------docker build finished-------------------"
-           }
+            steps{
+                script{
+                    echo "-----------------------Started docker build----------------"
+                    docker build (imagename+ ":" +version)
+                    echo "----------------------docker build finished-------------------"
+                    }
+            }
+        }
         stage("Docker Push"){
-            echo "-----------------Docker Push Started----------------------"
-            docker.withRegistry(registry,'artifact-cred')
-            app.push()
+            steps{
+                script{
+                    echo "-----------------Docker Push Started----------------------"
+                    docker.withRegistry(registry,'artifact-cred'){
+                    app.push()
+                    }
+                    echo"--------------------Docker Image Pushed---------------------"
+            }
         }
     }
 }
+}
+
+
 
