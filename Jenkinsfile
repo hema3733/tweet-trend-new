@@ -1,4 +1,4 @@
-def registry = "https://hema01.jfrog.io/"
+def registry = "https://hemajfrog.jfrog.io/"
 pipeline {
     agent {
         node {
@@ -22,7 +22,7 @@ environment {
         steps {
             script {
                     echo '<--------------- Jar Publish Started --------------->'
-                     def server = Artifactory.newServer url:registry+"/artifactory" ,  credentialsId:"JFrog-cred"
+                     def server = Artifactory.newServer url:registry+"/artifactory" ,  credentialsId:"artifactory-cred"
                      def properties = "buildid=${env.BUILD_ID},commitid=${GIT_COMMIT}";
                      def uploadSpec = """{
                           "files": [
