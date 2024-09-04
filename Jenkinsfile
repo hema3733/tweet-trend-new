@@ -1,5 +1,5 @@
 def registry = 'https://hemajfrog.jfrog.io/'
-def imagename =  'https://hemajfrog.jfrog.io/docker-repo-docker-local/ttrend'
+def imageName =  'hemajfrog.jfrog.io/docker-repo-docker-local/ttrend'
 version = "2.1.2"
 
 pipeline {
