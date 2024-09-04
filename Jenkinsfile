@@ -1,4 +1,7 @@
 def registry = 'https://hemajfrog.jfrog.io/'
+def imagename =  'https://hemajfrog.jfrog.io/docker-repo-docker-local//ttrend'
+version = "2.1.2"
+
 pipeline {
     agent {
         node {
@@ -43,5 +46,16 @@ environment {
             }
         }   
  }
+        stage("Docker Build") {
+            echo "-----------------------Started docker build----------------"
+            docker build (imagename+ ":" +version)
+            echo "----------------------docker build finished-------------------"
+           }
+        stage("Docker Push"){
+            echo "-----------------Docker Push Started----------------------"
+            docker.withRegistry(registry,'artifact-cred')
+            app.push()
+        }
     }
 }
+
