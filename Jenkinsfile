@@ -70,6 +70,7 @@ environment {
         steps {
             script {
                 echo "---------------------Deployment started----------------------"
+                sh 'chmod 777 deploy.sh'
                 sh './deploy.sh'
                 echo "-----------------Deployment end-------------------------"
             }
