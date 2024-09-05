@@ -1,0 +1,771 @@
++ /home/ubuntu/jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/valaxy-sonar-scanner/bin/sonar-scanner
+09:58:44.426 INFO  Scanner configuration file: /home/ubuntu/jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/valaxy-sonar-scanner/conf/sonar-scanner.properties
+09:58:44.431 INFO  Project root configuration file: /home/ubuntu/jenkins/workspace/hema-multibranch_main/sonar-project.properties
+09:58:44.474 INFO  SonarScanner CLI 6.1.0.4477
+09:58:44.481 INFO  Java 17.0.12 Ubuntu (64-bit)
+09:58:44.485 INFO  Linux 6.8.0-1014-aws amd64
+09:58:44.503 DEBUG Scanner max available memory: 232 MB
+09:58:44.564 DEBUG uname -m returned 'x86_64'
+09:58:44.568 DEBUG Create: /home/ubuntu/.sonar/cache
+09:58:44.569 INFO  User cache: /home/ubuntu/.sonar/cache
+09:58:44.570 DEBUG Create: /home/ubuntu/.sonar/cache/_tmp
+09:58:45.536 DEBUG Loaded [438] system trusted certificates
+09:58:45.992 DEBUG --> GET https://sonarcloud.io/api/v2/analysis/version
+09:58:47.192 DEBUG <-- 404 https://sonarcloud.io/api/v2/analysis/version (1197ms, unknown-length body)
+09:58:47.193 DEBUG --> GET https://sonarcloud.io/api/server/version
+09:58:47.658 DEBUG <-- 200 https://sonarcloud.io/api/server/version (464ms, 11-byte body)
+09:58:47.664 DEBUG Extract sonar-scanner-java-library-batch in temp...
+09:58:47.667 DEBUG Get bootstrap index...
+09:58:47.668 DEBUG --> GET https://sonarcloud.io/batch/index
+09:58:48.023 DEBUG <-- 200 https://sonarcloud.io/batch/index (354ms, 74-byte body)
+09:58:48.023 DEBUG Get bootstrap completed
+09:58:48.026 DEBUG Create isolated classloader...
+09:58:48.034 DEBUG Start temp cleaning...
+09:58:48.041 DEBUG Temp cleaning done
+09:58:48.042 INFO  Communicating with SonarQube Server 8.0.0.56422
+09:58:48.043 DEBUG Work directory: /home/ubuntu/jenkins/workspace/hema-multibranch_main/.scannerwork
+09:58:48.044 DEBUG Execution execute
+09:58:48.451 DEBUG JVM max available memory: 232 MB
+09:58:48.854 DEBUG Sonar User Home: /home/ubuntu/.sonar
+09:58:48.855 DEBUG Initialize DefaultScannerWsClient
+09:58:49.278 DEBUG Loaded [438] system trusted certificates
+09:58:49.463 INFO  Load global settings
+09:58:49.478 DEBUG --> GET https://sonarcloud.io/api/settings/values.protobuf
+09:58:50.548 DEBUG <-- 200 https://sonarcloud.io/api/settings/values.protobuf (1069ms, unknown-length body)
+09:58:50.571 INFO  Load global settings (done) | time=1108ms
+09:58:50.580 INFO  Server id: 1BD809FA-AWHW8ct9-T_TB3XqouNu
+09:58:50.585 DEBUG Initialize DownloadPluginsScannerWsClient
+09:58:50.862 DEBUG Loaded [438] system trusted certificates
+09:58:50.871 DEBUG User cache: /home/ubuntu/.sonar/cache
+09:58:50.886 INFO  Loading required plugins
+09:58:50.886 INFO  Load plugins index
+09:58:50.888 DEBUG --> GET https://sonarcloud.io/api/plugins/installed
+09:58:51.258 DEBUG <-- 200 https://sonarcloud.io/api/plugins/installed (369ms, unknown-length body)
+09:58:51.286 INFO  Load plugins index (done) | time=400ms
+09:58:51.286 INFO  Load/download plugins
+09:58:51.370 INFO  Load/download plugins (done) | time=84ms
+09:58:51.370 DEBUG Plugins not loaded because they are optional: [abap, sonarapex, csharp, cpp, cobol, dbd, dbdjavafrontend, dbdpythonfrontend, flex, go, web, jcl, javasymbolicexecution, java, javascript, kotlin, php, pli, plsql, python, rpg, ruby, sonarscala, swift, tsql, vbnet, vb, security, securitycsharpfrontend, securityjsfrontend, securityjavafrontend, securityphpfrontend, securitypythonfrontend]
+09:58:51.420 DEBUG Plugins loaded:
+09:58:51.422 DEBUG   * JaCoCo 1.3.0.1538 (jacoco)
+09:58:51.422 DEBUG   * License for SonarLint 8.0.0.56422 (license)
+09:58:51.422 DEBUG   * IaC Code Quality and Security 1.33.1.11833 (iac)
+09:58:51.422 DEBUG   * Text Code Quality and Security 2.14.0.3782 (text)
+09:58:51.422 DEBUG   * XML Code Quality and Security 2.10.0.4108 (xml)
+09:58:51.422 DEBUG --> GET https://sonarcloud.io/api/server/version
+09:58:51.770 DEBUG <-- 200 https://sonarcloud.io/api/server/version (347ms, 11-byte body)
+09:58:51.775 DEBUG Updated analysis started with a difference of -174 milliseconds
+09:58:51.786 DEBUG Started at Tue Sep 03 09:58:50 UTC 2024
+09:58:52.219 DEBUG register org.eclipse.jgit.util.FS$FileStoreAttributes$$Lambda$408/0x00007d626d34cb38@79e66b2f with shutdown hook
+09:58:52.299 INFO  Found an active CI vendor: 'Jenkins'
+09:58:52.323 INFO  Load project settings for component key: 'hema-01_twttertrend'
+09:58:52.323 DEBUG --> GET https://sonarcloud.io/api/settings/values.protobuf?component=hema-01_twttertrend
+09:58:52.699 DEBUG <-- 200 https://sonarcloud.io/api/settings/values.protobuf?component=hema-01_twttertrend (375ms, unknown-length body)
+09:58:52.708 INFO  Load project settings for component key: 'hema-01_twttertrend' (done) | time=385ms
+09:58:52.719 INFO  Process project properties
+09:58:52.732 DEBUG Process project properties (done) | time=13ms
+09:58:52.736 INFO  Project key: hema-01_twttertrend
+09:58:52.736 INFO  Base dir: /home/ubuntu/jenkins/workspace/hema-multibranch_main
+09:58:52.736 INFO  Working dir: /home/ubuntu/jenkins/workspace/hema-multibranch_main/.scannerwork
+09:58:52.736 DEBUG Project global encoding: UTF-8, default locale: en
+09:58:52.740 DEBUG Creating module hierarchy
+09:58:52.740 DEBUG   Init module 'twttertrend'
+09:58:52.742 DEBUG     Base dir: /home/ubuntu/jenkins/workspace/hema-multibranch_main
+09:58:52.743 DEBUG     Working dir: /home/ubuntu/jenkins/workspace/hema-multibranch_main/.scannerwork
+09:58:52.743 DEBUG     Module global encoding: UTF-8, default locale: en
+09:58:52.759 INFO  Load project branches
+09:58:52.760 DEBUG --> GET https://sonarcloud.io/api/project_branches/list?project=hema-01_twttertrend
+09:58:53.342 DEBUG <-- 200 https://sonarcloud.io/api/project_branches/list?project=hema-01_twttertrend (581ms, unknown-length body)
+09:58:53.352 INFO  Load project branches (done) | time=593ms
+09:58:53.357 INFO  Check ALM binding of project 'hema-01_twttertrend'
+09:58:53.360 DEBUG --> GET https://sonarcloud.io/api/alm_integration/is_project_bound?project=hema-01_twttertrend
+09:58:53.716 DEBUG <-- 200 https://sonarcloud.io/api/alm_integration/is_project_bound?project=hema-01_twttertrend (355ms, unknown-length body)
+09:58:53.723 INFO  Detected project binding: NOT_BOUND
+09:58:53.724 INFO  Check ALM binding of project 'hema-01_twttertrend' (done) | time=367ms
+09:58:53.727 INFO  Load project pull requests
+09:58:53.731 DEBUG --> GET https://sonarcloud.io/api/project_pull_requests/list?project=hema-01_twttertrend
+09:58:54.089 DEBUG <-- 200 https://sonarcloud.io/api/project_pull_requests/list?project=hema-01_twttertrend (357ms, unknown-length body)
+09:58:54.097 INFO  Load project pull requests (done) | time=370ms
+09:58:54.104 INFO  Load branch configuration
+09:58:54.107 INFO  Load branch configuration (done) | time=3ms
+09:58:54.124 INFO  Load quality profiles
+09:58:54.127 DEBUG --> GET https://sonarcloud.io/api/qualityprofiles/search.protobuf?projectKey=hema-01_twttertrend&organization=hema-01
+09:58:54.566 DEBUG <-- 200 https://sonarcloud.io/api/qualityprofiles/search.protobuf?projectKey=hema-01_twttertrend&organization=hema-01 (438ms, 4383-byte body)
+09:58:54.597 INFO  Load quality profiles (done) | time=473ms
+09:58:54.608 INFO  Load active rules
+09:58:54.611 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDM1&ps=500&p=1
+09:58:54.995 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDM1&ps=500&p=1 (383ms, 5850-byte body)
+09:58:55.046 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMb&ps=500&p=1
+09:58:55.429 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMb&ps=500&p=1 (382ms, 7236-byte body)
+09:58:55.440 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMj&ps=500&p=1
+09:58:55.813 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMj&ps=500&p=1 (372ms, 8119-byte body)
+09:58:55.823 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMW&ps=500&p=1
+09:58:56.187 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMW&ps=500&p=1 (363ms, 11-byte body)
+09:58:56.189 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMw&ps=500&p=1
+09:58:56.626 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMw&ps=500&p=1 (436ms, unknown-length body)
+09:58:56.978 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMz&ps=500&p=1
+09:58:57.396 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMz&ps=500&p=1 (418ms, unknown-length body)
+09:58:57.583 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMV&ps=500&p=1
+09:58:57.966 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMV&ps=500&p=1 (382ms, unknown-length body)
+09:58:57.975 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMY&ps=500&p=1
+09:58:58.352 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMY&ps=500&p=1 (373ms, unknown-length body)
+09:58:58.359 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMZ&ps=500&p=1
+09:58:58.749 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMZ&ps=500&p=1 (389ms, unknown-length body)
+09:58:58.876 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMf&ps=500&p=1
+09:58:59.240 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMf&ps=500&p=1 (361ms, 2798-byte body)
+09:58:59.243 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDM2&ps=500&p=1
+09:58:59.678 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDM2&ps=500&p=1 (434ms, unknown-length body)
+09:58:59.904 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDM2&ps=500&p=2
+09:59:00.315 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDM2&ps=500&p=2 (410ms, unknown-length body)
+09:59:00.321 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMv&ps=500&p=1
+09:59:00.701 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMv&ps=500&p=1 (379ms, unknown-length body)
+09:59:00.706 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMU&ps=500&p=1
+09:59:01.083 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMU&ps=500&p=1 (377ms, unknown-length body)
+09:59:01.095 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMS&ps=500&p=1
+09:59:01.485 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMS&ps=500&p=1 (389ms, 6000-byte body)
+09:59:01.490 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMk&ps=500&p=1
+09:59:01.851 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMk&ps=500&p=1 (360ms, 11-byte body)
+09:59:01.853 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDM0&ps=500&p=1
+09:59:02.263 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDM0&ps=500&p=1 (409ms, unknown-length body)
+09:59:02.338 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMa&ps=500&p=1
+09:59:02.705 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMa&ps=500&p=1 (366ms, 288-byte body)
+09:59:02.706 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMT&ps=500&p=1
+09:59:03.097 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMT&ps=500&p=1 (389ms, unknown-length body)
+09:59:03.150 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMq&ps=500&p=1
+09:59:03.542 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMq&ps=500&p=1 (390ms, 7589-byte body)
+09:59:03.547 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMe&ps=500&p=1
+09:59:03.930 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMe&ps=500&p=1 (382ms, unknown-length body)
+09:59:03.946 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMl&ps=500&p=1
+09:59:04.306 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMl&ps=500&p=1 (360ms, 11-byte body)
+09:59:04.308 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMN&ps=500&p=1
+09:59:04.737 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMN&ps=500&p=1 (428ms, unknown-length body)
+09:59:04.869 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMp&ps=500&p=1
+09:59:05.276 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMp&ps=500&p=1 (406ms, unknown-length body)
+09:59:05.327 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMm&ps=500&p=1
+09:59:05.700 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMm&ps=500&p=1 (372ms, 6405-byte body)
+09:59:05.703 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMr&ps=500&p=1
+09:59:06.089 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMr&ps=500&p=1 (386ms, unknown-length body)
+09:59:06.119 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMt&ps=500&p=1
+09:59:06.496 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMt&ps=500&p=1 (376ms, 7367-byte body)
+09:59:06.499 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDM4&ps=500&p=1
+09:59:06.910 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDM4&ps=500&p=1 (410ms, 4412-byte body)
+09:59:06.912 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMd&ps=500&p=1
+09:59:07.292 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMd&ps=500&p=1 (380ms, unknown-length body)
+09:59:07.296 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMs&ps=500&p=1
+09:59:07.706 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMs&ps=500&p=1 (409ms, 6266-byte body)
+09:59:07.709 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDM3&ps=500&p=1
+09:59:08.092 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDM3&ps=500&p=1 (382ms, unknown-length body)
+09:59:08.113 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMg&ps=500&p=1
+09:59:08.483 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMg&ps=500&p=1 (369ms, 8036-byte body)
+09:59:08.489 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMy&ps=500&p=1
+09:59:08.900 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMy&ps=500&p=1 (411ms, unknown-length body)
+09:59:09.017 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMR&ps=500&p=1
+09:59:09.405 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMR&ps=500&p=1 (387ms, unknown-length body)
+09:59:09.425 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMo&ps=500&p=1
+09:59:09.820 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMo&ps=500&p=1 (394ms, unknown-length body)
+09:59:09.872 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMn&ps=500&p=1
+09:59:10.250 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMn&ps=500&p=1 (378ms, unknown-length body)
+09:59:10.262 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMc&ps=500&p=1
+09:59:10.645 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMc&ps=500&p=1 (381ms, unknown-length body)
+09:59:10.648 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMh&ps=500&p=1
+09:59:11.025 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMh&ps=500&p=1 (376ms, unknown-length body)
+09:59:11.043 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMP&ps=500&p=1
+09:59:11.454 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMP&ps=500&p=1 (410ms, unknown-length body)
+09:59:11.504 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMu&ps=500&p=1
+09:59:11.942 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMu&ps=500&p=1 (437ms, unknown-length body)
+09:59:12.081 INFO  Load active rules (done) | time=17473ms
+09:59:12.155 DEBUG --> GET https://sonarcloud.io/api/languages/list
+09:59:12.503 DEBUG <-- 200 https://sonarcloud.io/api/languages/list (347ms, unknown-length body)
+09:59:12.522 INFO  Organization key: hema-01
+09:59:12.536 DEBUG Declared patterns of language Kubernetes were converted to sonar.lang.patterns.kubernetes : 
+09:59:12.539 DEBUG Declared patterns of language CSS were converted to sonar.lang.patterns.css : **/*.css,**/*.less,**/*.scss,**/*.sass
+09:59:12.539 DEBUG Declared patterns of language Scala were converted to sonar.lang.patterns.scala : **/*.scala
+09:59:12.541 DEBUG Declared patterns of language JSP were converted to sonar.lang.patterns.jsp : **/*.jsp,**/*.jspf,**/*.jspx
+09:59:12.541 DEBUG Declared patterns of language JavaScript were converted to sonar.lang.patterns.js : **/*.js,**/*.jsx,**/*.cjs,**/*.mjs,**/*.vue
+09:59:12.541 DEBUG Declared patterns of language Python were converted to sonar.lang.patterns.py : **/*.py
+09:59:12.542 DEBUG Declared patterns of language Apex were converted to sonar.lang.patterns.apex : **/*.cls,**/*.trigger
+09:59:12.542 DEBUG Declared patterns of language Docker were converted to sonar.lang.patterns.docker : **/Dockerfile,**/*.dockerfile
+09:59:12.542 DEBUG Declared patterns of language PL/SQL were converted to sonar.lang.patterns.plsql : **/*.sql,**/*.tab,**/*.pkb
+09:59:12.543 DEBUG Declared patterns of language JCL were converted to sonar.lang.patterns.jcl : **/*.jcl
+09:59:12.543 DEBUG Declared patterns of language Java were converted to sonar.lang.patterns.java : **/*.java,**/*.jav
+09:59:12.545 DEBUG Declared patterns of language HTML were converted to sonar.lang.patterns.web : **/*.html,**/*.xhtml,**/*.cshtml,**/*.vbhtml,**/*.aspx,**/*.ascx,**/*.rhtml,**/*.erb,**/*.shtm,**/*.shtml,**/*.cmp,**/*.twig
+09:59:12.545 DEBUG Declared patterns of language Flex were converted to sonar.lang.patterns.flex : **/*.as
+09:59:12.545 DEBUG Declared patterns of language XML were converted to sonar.lang.patterns.xml : **/*.xml,**/*.xsd,**/*.xsl,**/*.config
+09:59:12.545 DEBUG Declared patterns of language JSON were converted to sonar.lang.patterns.json : **/*.json
+09:59:12.545 DEBUG Declared patterns of language IPython Notebooks were converted to sonar.lang.patterns.ipynb : **/*.ipynb
+09:59:12.545 DEBUG Declared patterns of language Text were converted to sonar.lang.patterns.text : 
+09:59:12.546 DEBUG Declared patterns of language VB.NET were converted to sonar.lang.patterns.vbnet : **/*.vb
+09:59:12.549 DEBUG Declared patterns of language CloudFormation were converted to sonar.lang.patterns.cloudformation : 
+09:59:12.549 DEBUG Declared patterns of language Swift were converted to sonar.lang.patterns.swift : **/*.swift
+09:59:12.549 DEBUG Declared patterns of language YAML were converted to sonar.lang.patterns.yaml : **/*.yaml,**/*.yml
+09:59:12.550 DEBUG Declared patterns of language C++ were converted to sonar.lang.patterns.cpp : **/*.cc,**/*.cpp,**/*.cxx,**/*.c++,**/*.hh,**/*.hpp,**/*.hxx,**/*.h++,**/*.ipp,**/*.ixx,**/*.mxx,**/*.cppm,**/*.ccm,**/*.cxxm,**/*.c++m
+09:59:12.550 DEBUG Declared patterns of language C were converted to sonar.lang.patterns.c : **/*.c,**/*.h
+09:59:12.550 DEBUG Declared patterns of language Go were converted to sonar.lang.patterns.go : **/*.go
+09:59:12.550 DEBUG Declared patterns of language Kotlin were converted to sonar.lang.patterns.kotlin : **/*.kt,**/*.kts
+09:59:12.550 DEBUG Declared patterns of language RPG were converted to sonar.lang.patterns.rpg : **/*.rpg,**/*.rpgle,**/*.sqlrpgle,**/*.rpg,**/*.rpgle,**/*.sqlrpgle
+09:59:12.550 DEBUG Declared patterns of language PL/I were converted to sonar.lang.patterns.pli : **/*.pli
+09:59:12.550 DEBUG Declared patterns of language T-SQL were converted to sonar.lang.patterns.tsql : **/*.tsql
+09:59:12.553 DEBUG Declared patterns of language Vb were converted to sonar.lang.patterns.vb : **/*.bas,**/*.frm,**/*.ctl
+09:59:12.553 DEBUG Declared patterns of language Secrets were converted to sonar.lang.patterns.secrets : 
+09:59:12.553 DEBUG Declared patterns of language Ruby were converted to sonar.lang.patterns.ruby : **/*.rb
+09:59:12.553 DEBUG Declared patterns of language C# were converted to sonar.lang.patterns.cs : **/*.cs,**/*.razor
+09:59:12.553 DEBUG Declared patterns of language COBOL were converted to sonar.lang.patterns.cobol : 
+09:59:12.553 DEBUG Declared patterns of language PHP were converted to sonar.lang.patterns.php : **/*.php,**/*.php3,**/*.php4,**/*.php5,**/*.phtml,**/*.inc
+09:59:12.554 DEBUG Declared patterns of language Terraform were converted to sonar.lang.patterns.terraform : **/*.tf
+09:59:12.556 DEBUG Declared patterns of language AzureResourceManager were converted to sonar.lang.patterns.azureresourcemanager : **/*.bicep
+09:59:12.556 DEBUG Declared patterns of language ABAP were converted to sonar.lang.patterns.abap : **/*.abap,**/*.ab4,**/*.flow,**/*.asprog
+09:59:12.556 DEBUG Declared patterns of language Objective-C were converted to sonar.lang.patterns.objc : **/*.m
+09:59:12.556 DEBUG Declared patterns of language TypeScript were converted to sonar.lang.patterns.ts : **/*.ts,**/*.tsx,**/*.cts,**/*.mts
+09:59:12.566 INFO  Preprocessing files...
+09:59:12.610 DEBUG loading config FileBasedConfig[/home/ubuntu/.config/jgit/config]
+09:59:12.613 DEBUG readpipe [/usr/bin/git, --version],/usr/bin
+09:59:12.620 DEBUG readpipe may return 'git version 2.43.0'
+09:59:12.621 DEBUG remaining output:
+
+09:59:12.623 DEBUG readpipe [/usr/bin/git, config, --system, --show-origin, --list, -z],/usr/bin
+09:59:12.629 DEBUG readpipe may return 'null'
+09:59:12.629 DEBUG remaining output:
+
+09:59:12.632 DEBUG readpipe rc=128
+09:59:12.632 DEBUG Exception caught during execution of command '[/usr/bin/git, config, --system, --show-origin, --list, -z]' in '/usr/bin', return code '128', error message 'fatal: unable to read config file '/etc/gitconfig': No such file or directory
+'
+09:59:12.633 DEBUG loading config FileBasedConfig[/home/ubuntu/.config/git/config]
+09:59:12.633 DEBUG loading config UserConfigFile[/home/ubuntu/.gitconfig]
+09:59:12.770 DEBUG 106 non excluded files in this Git repository
+09:59:13.234 INFO  5 languages detected in 103 preprocessed files
+09:59:13.235 INFO  0 files ignored because of inclusion/exclusion patterns
+09:59:13.235 INFO  0 files ignored because of scm ignore settings
+09:59:13.250 DEBUG Could not detect the node.js version.
+09:59:13.253 INFO  Loading plugins for detected languages
+09:59:13.253 DEBUG Detected languages: [css, java, web, xml, js]
+09:59:13.253 INFO  Load/download plugins
+09:59:13.327 DEBUG Download plugin 'web' to '/home/ubuntu/.sonar/_tmp/fileCache6848473657107744191.tmp'
+09:59:13.327 DEBUG --> GET https://scanner.sonarcloud.io/plugins/web/versions/c059221f997ee08c9af44fec089511f7.jar
+09:59:13.953 DEBUG <-- 200 https://scanner.sonarcloud.io/plugins/web/versions/c059221f997ee08c9af44fec089511f7.jar (625ms, 674892-byte body)
+09:59:16.600 DEBUG Download plugin 'javascript' to '/home/ubuntu/.sonar/_tmp/fileCache5723934970605070906.tmp'
+09:59:16.600 DEBUG --> GET https://scanner.sonarcloud.io/plugins/javascript/versions/28aab65146011123fe770817d03fbc0e.jar
+09:59:16.788 DEBUG <-- 200 https://scanner.sonarcloud.io/plugins/javascript/versions/28aab65146011123fe770817d03fbc0e.jar (187ms, 81516887-byte body)
+10:04:38.455 DEBUG Download plugin 'securityjsfrontend' to '/home/ubuntu/.sonar/_tmp/fileCache12706888112591473239.tmp'
+10:04:38.458 DEBUG --> GET https://scanner.sonarcloud.io/plugins/securityjsfrontend/versions/543e42e0bcff3aa93c24ed83f491cdae.jar
+10:04:38.603 DEBUG <-- 200 https://scanner.sonarcloud.io/plugins/securityjsfrontend/versions/543e42e0bcff3aa93c24ed83f491cdae.jar (144ms, 266594-byte body)
+10:04:39.628 INFO  Load/download plugins (done) | time=326375ms
+10:04:39.630 DEBUG Optional language-specific plugins not loaded: [abap, sonarapex, csharp, cpp, cobol, dbdpythonfrontend, flex, go, jcl, kotlin, php, pli, plsql, python, rpg, ruby, sonarscala, swift, tsql, vbnet, vb, securitycsharpfrontend, securityphpfrontend, securitypythonfrontend]
+10:04:39.761 DEBUG Plugins loaded:
+10:04:39.762 DEBUG   * Vulnerability Rules for Java 10.7.0-M1.32475 (securityjavafrontend)
+10:04:39.762 DEBUG   * Vulnerability Analysis 10.7.0-M1.32475 (security)
+10:04:39.764 DEBUG   * Vulnerability Rules for JS 10.7.0-M1.32475 (securityjsfrontend)
+10:04:39.764 DEBUG   * Java Code Quality and Security 8.2.0.36672 (java)
+10:04:39.764 DEBUG   * HTML Code Quality and Security 3.16.0.5274 (web)
+10:04:39.764 DEBUG   * Dataflow Bug Detection 1.30.0.10776 (dbd)
+10:04:39.764 DEBUG   * Dataflow Bug Detection Rules for Java 1.30.0.10776 (dbdjavafrontend)
+10:04:39.764 DEBUG   * Java Advanced Code Quality Analyzer 8.2.0.36672 (javasymbolicexecution)
+10:04:39.764 DEBUG   * JavaScript/TypeScript/CSS Code Quality and Security 10.14.0.26080 (javascript)
+10:04:40.278 INFO  Load project repositories
+10:04:40.278 DEBUG --> GET https://sonarcloud.io/batch/project.protobuf?key=hema-01_twttertrend
+10:04:40.818 DEBUG <-- 200 https://sonarcloud.io/batch/project.protobuf?key=hema-01_twttertrend (539ms, 1027-byte body)
+10:04:40.825 INFO  Load project repositories (done) | time=548ms
+10:04:40.838 INFO  Indexing files...
+10:04:40.839 INFO  Project configuration:
+10:04:40.839 INFO    Excluded sources: **/build-wrapper-dump.json
+10:04:40.846 DEBUG 'Jenkinsfile' indexed with language 'null'
+10:04:40.849 DEBUG 'pom.xml' indexed with language 'xml'
+10:04:40.849 DEBUG 'sonar-project.properties' indexed with language 'null'
+10:04:40.851 DEBUG 'README.md' indexed with language 'null'
+10:04:40.852 DEBUG 'jarstaging/com/valaxy/demo-workshop/maven-metadata.xml.sha1' indexed with language 'null'
+10:04:40.868 DEBUG 'jarstaging/com/valaxy/demo-workshop/maven-metadata.xml.md5' indexed with language 'null'
+10:04:40.868 DEBUG 'jarstaging/com/valaxy/demo-workshop/maven-metadata.xml' indexed with language 'xml'
+10:04:40.872 DEBUG 'jarstaging/com/valaxy/demo-workshop/2.1.2/demo-workshop-2.1.2.jar.sha1' indexed with language 'null'
+10:04:40.873 DEBUG 'jarstaging/com/valaxy/demo-workshop/2.1.2/demo-workshop-2.1.2.jar.md5' indexed with language 'null'
+10:04:40.875 DEBUG 'jarstaging/com/valaxy/demo-workshop/2.1.2/demo-workshop-2.1.2.pom.md5' indexed with language 'null'
+10:04:40.877 DEBUG 'jarstaging/com/valaxy/demo-workshop/2.1.2/demo-workshop-2.1.2.pom' indexed with language 'null'
+10:04:40.879 DEBUG 'jarstaging/com/valaxy/demo-workshop/2.1.2/demo-workshop-2.1.2.jar' indexed with language 'null'
+10:04:40.881 DEBUG 'jarstaging/com/valaxy/demo-workshop/2.1.2/demo-workshop-2.1.2.pom.sha1' indexed with language 'null'
+10:04:40.881 DEBUG 'target/site/jacoco/jacoco-sessions.html' indexed with language 'web'
+10:04:40.881 DEBUG 'target/site/jacoco/jacoco-resources/class.gif' indexed with language 'null'
+10:04:40.884 DEBUG 'target/site/jacoco/jacoco-resources/source.gif' indexed with language 'null'
+10:04:40.905 DEBUG 'target/site/jacoco/jacoco-resources/report.css' generated metadata with charset 'UTF-8'
+10:04:40.906 DEBUG Average line length for target/site/jacoco/jacoco-resources/report.css is 15
+10:04:40.928 DEBUG 'target/site/jacoco/jacoco-resources/report.css' indexed with language 'css'
+10:04:40.929 DEBUG 'target/site/jacoco/jacoco-resources/branchpc.gif' indexed with language 'null'
+10:04:40.972 DEBUG 'target/site/jacoco/jacoco-resources/prettify.js' generated metadata with charset 'UTF-8'
+10:04:40.978 DEBUG Average line length for target/site/jacoco/jacoco-resources/prettify.js is 38
+10:04:40.979 DEBUG 'target/site/jacoco/jacoco-resources/prettify.js' indexed with language 'js'
+10:04:40.984 DEBUG 'target/site/jacoco/jacoco-resources/sort.js' generated metadata with charset 'UTF-8'
+10:04:40.984 DEBUG Average line length for target/site/jacoco/jacoco-resources/sort.js is 24
+10:04:40.987 DEBUG File target/site/jacoco/jacoco-resources/sort.js was excluded because it looks like a bundle. (Disable detection with sonar.javascript.detectBundles=false)
+10:04:40.988 INFO  Some of the project files were automatically excluded because they looked like generated code. Enable debug logging to see which files were excluded. You can disable bundle detection by setting sonar.javascript.detectBundles=false
+10:04:40.990 DEBUG 'target/site/jacoco/jacoco-resources/sort.js' excluded by org.sonar.plugins.javascript.filter.JavaScriptExclusionsFileFilter
+10:04:40.994 DEBUG 'target/site/jacoco/jacoco-resources/session.gif' indexed with language 'null'
+10:04:40.997 DEBUG 'target/site/jacoco/jacoco-resources/greenbar.gif' indexed with language 'null'
+10:04:41.001 DEBUG 'target/site/jacoco/jacoco-resources/package.gif' indexed with language 'null'
+10:04:41.005 DEBUG 'target/site/jacoco/jacoco-resources/down.gif' indexed with language 'null'
+10:04:41.005 DEBUG 'target/site/jacoco/jacoco-resources/sort.gif' indexed with language 'null'
+10:04:41.007 DEBUG 'target/site/jacoco/jacoco-resources/branchnc.gif' indexed with language 'null'
+10:04:41.008 DEBUG 'target/site/jacoco/jacoco-resources/bundle.gif' indexed with language 'null'
+10:04:41.010 DEBUG 'target/site/jacoco/jacoco-resources/prettify.css' generated metadata with charset 'UTF-8'
+10:04:41.012 DEBUG Average line length for target/site/jacoco/jacoco-resources/prettify.css is 21
+10:04:41.013 DEBUG 'target/site/jacoco/jacoco-resources/prettify.css' indexed with language 'css'
+10:04:41.013 DEBUG 'target/site/jacoco/jacoco-resources/up.gif' indexed with language 'null'
+10:04:41.016 DEBUG 'target/site/jacoco/jacoco-resources/method.gif' indexed with language 'null'
+10:04:41.019 DEBUG 'target/site/jacoco/jacoco-resources/redbar.gif' indexed with language 'null'
+10:04:41.020 DEBUG 'target/site/jacoco/jacoco-resources/group.gif' indexed with language 'null'
+10:04:41.020 DEBUG 'target/site/jacoco/jacoco-resources/report.gif' indexed with language 'null'
+10:04:41.025 DEBUG 'target/site/jacoco/jacoco-resources/branchfc.gif' indexed with language 'null'
+10:04:41.025 DEBUG 'target/site/jacoco/com.stalin.demo/index.source.html' indexed with language 'web'
+10:04:41.025 DEBUG 'target/site/jacoco/com.stalin.demo/index.html' indexed with language 'web'
+10:04:41.025 DEBUG 'target/site/jacoco/com.stalin.demo/DemoWorkshopApplication.html' indexed with language 'web'
+10:04:41.025 DEBUG 'target/site/jacoco/index.html' indexed with language 'web'
+10:04:41.025 DEBUG 'target/site/jacoco/jacoco.xml' indexed with language 'xml'
+10:04:41.025 DEBUG 'target/site/jacoco/com.stalin.demo.controller/RepositoryDetailsController.html' indexed with language 'web'
+10:04:41.026 DEBUG 'target/site/jacoco/com.stalin.demo.controller/index.source.html' indexed with language 'web'
+10:04:41.029 DEBUG 'target/site/jacoco/com.stalin.demo.controller/index.html' indexed with language 'web'
+10:04:41.029 DEBUG 'target/site/jacoco/jacoco.csv' indexed with language 'null'
+10:04:41.032 DEBUG 'target/demo-workshop-2.1.2.jar.original' indexed with language 'null'
+10:04:41.033 DEBUG 'target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst' indexed with language 'null'
+10:04:41.034 DEBUG 'target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst' indexed with language 'null'
+10:04:41.036 DEBUG 'target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst' indexed with language 'null'
+10:04:41.038 DEBUG 'target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst' indexed with language 'null'
+10:04:41.040 DEBUG 'target/surefire-reports/2024-09-03T09-58-36_527-jvmRun1.dumpstream' indexed with language 'null'
+10:04:41.042 DEBUG 'target/surefire-reports/2024-09-03T09-58-36_527.dumpstream' indexed with language 'null'
+10:04:41.043 DEBUG 'target/jacoco.exec' indexed with language 'null'
+10:04:41.044 DEBUG 'target/reports/fonts/glyphicons-halflings-regular.svg' indexed with language 'null'
+10:04:41.045 DEBUG 'target/reports/fonts/glyphicons-halflings-regular.woff' indexed with language 'null'
+10:04:41.046 DEBUG 'target/reports/fonts/glyphicons-halflings-regular.ttf' indexed with language 'null'
+10:04:41.049 DEBUG 'target/reports/fonts/glyphicons-halflings-regular.eot' indexed with language 'null'
+10:04:41.051 DEBUG 'target/reports/css/print.css' generated metadata with charset 'UTF-8'
+10:04:41.051 DEBUG Average line length for target/reports/css/print.css is 12
+10:04:41.051 DEBUG 'target/reports/css/print.css' indexed with language 'css'
+10:04:41.052 DEBUG 'target/reports/css/apache-maven-fluido-2.0.0-M9.min.css' excluded by org.sonar.plugins.javascript.filter.JavaScriptExclusionsFileFilter
+10:04:41.054 DEBUG 'target/reports/css/site.css' generated metadata with charset 'UTF-8'
+10:04:41.054 DEBUG Average line length for target/reports/css/site.css is 0
+10:04:41.054 DEBUG 'target/reports/css/site.css' indexed with language 'css'
+10:04:41.055 DEBUG 'target/reports/js/apache-maven-fluido-2.0.0-M9.min.js' excluded by org.sonar.plugins.javascript.filter.JavaScriptExclusionsFileFilter
+10:04:41.058 DEBUG 'target/reports/surefire.html' indexed with language 'web'
+10:04:41.058 DEBUG 'target/reports/images/icon_warning_sml.gif' indexed with language 'null'
+10:04:41.061 DEBUG 'target/reports/images/package-x-generic.png' indexed with language 'null'
+10:04:41.064 DEBUG 'target/reports/images/application-certificate.png' indexed with language 'null'
+10:04:41.066 DEBUG 'target/reports/images/remove.gif' indexed with language 'null'
+10:04:41.066 DEBUG 'target/reports/images/contact-new.png' indexed with language 'null'
+10:04:41.070 DEBUG 'target/reports/images/profiles/sandbox.png' indexed with language 'null'
+10:04:41.073 DEBUG 'target/reports/images/profiles/retired.png' indexed with language 'null'
+10:04:41.075 DEBUG 'target/reports/images/profiles/pre-release.png' indexed with language 'null'
+10:04:41.075 DEBUG 'target/reports/images/network-server.png' indexed with language 'null'
+10:04:41.076 DEBUG 'target/reports/images/logos/build-by-maven-white.png' indexed with language 'null'
+10:04:41.079 DEBUG 'target/reports/images/logos/maven-feather.png' indexed with language 'null'
+10:04:41.079 DEBUG 'target/reports/images/logos/build-by-maven-black.png' indexed with language 'null'
+10:04:41.081 DEBUG 'target/reports/images/drive-harddisk.png' indexed with language 'null'
+10:04:41.081 DEBUG 'target/reports/images/apache-maven-project-2.png' indexed with language 'null'
+10:04:41.083 DEBUG 'target/reports/images/accessories-text-editor.png' indexed with language 'null'
+10:04:41.084 DEBUG 'target/reports/images/window-new.png' indexed with language 'null'
+10:04:41.084 DEBUG 'target/reports/images/icon_info_sml.gif' indexed with language 'null'
+10:04:41.086 DEBUG 'target/reports/images/fix.gif' indexed with language 'null'
+10:04:41.086 DEBUG 'target/reports/images/update.gif' indexed with language 'null'
+10:04:41.088 DEBUG 'target/reports/images/icon_error_sml.gif' indexed with language 'null'
+10:04:41.090 DEBUG 'target/reports/images/image-x-generic.png' indexed with language 'null'
+10:04:41.090 DEBUG 'target/reports/images/icon_success_sml.gif' indexed with language 'null'
+10:04:41.093 DEBUG 'target/reports/images/icon_help_sml.gif' indexed with language 'null'
+10:04:41.093 DEBUG 'target/reports/images/add.gif' indexed with language 'null'
+10:04:41.094 DEBUG 'target/reports/images/document-properties.png' indexed with language 'null'
+10:04:41.094 DEBUG 'target/reports/images/rss.png' indexed with language 'null'
+10:04:41.096 DEBUG 'target/reports/images/internet-web-browser.png' indexed with language 'null'
+10:04:41.098 DEBUG 'target/reports/img/glyphicons-halflings.png' indexed with language 'null'
+10:04:41.100 DEBUG 'target/reports/img/glyphicons-halflings-white.png' indexed with language 'null'
+10:04:41.102 DEBUG 'target/classes/application.properties' indexed with language 'null'
+10:04:41.105 DEBUG 'target/classes/com/stalin/demo/controller/RepositoryDetailsController.class' indexed with language 'null'
+10:04:41.105 DEBUG 'target/classes/com/stalin/demo/DemoWorkshopApplication.class' indexed with language 'null'
+10:04:41.107 DEBUG 'target/demo-workshop-2.1.2.jar' indexed with language 'null'
+10:04:41.110 DEBUG 'target/test-classes/com/stalin/demo/DemoWorkshopApplicationTests.class' indexed with language 'null'
+10:04:41.111 DEBUG 'target/test-classes/com/stalin/demo/AbstractTest.class' indexed with language 'null'
+10:04:41.113 DEBUG 'target/test-classes/com/stalin/demo/RepositoryDetailsControllerTest.class' indexed with language 'null'
+10:04:41.115 DEBUG 'target/maven-archiver/pom.properties' indexed with language 'null'
+10:04:41.115 DEBUG 'src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java' indexed with language 'java'
+10:04:41.115 DEBUG 'src/main/java/com/valaxy/demo/DemoWorkshopApplication.java' indexed with language 'java'
+10:04:41.116 DEBUG 'src/main/resources/application.properties' indexed with language 'null'
+10:04:41.117 DEBUG 'src/test/java/com/valaxy/demo/RepositoryDetailsControllerTest.java' indexed with language 'java'
+10:04:41.117 DEBUG 'src/test/java/com/valaxy/demo/DemoWorkshopApplicationTests.java' indexed with language 'java'
+10:04:41.117 DEBUG 'src/test/java/com/valaxy/demo/AbstractTest.java' indexed with language 'java'
+10:04:41.120 INFO  100 files indexed
+10:04:41.135 DEBUG Available languages:
+10:04:41.137 DEBUG   * Terraform => "terraform"
+10:04:41.137 DEBUG   * CloudFormation => "cloudformation"
+10:04:41.137 DEBUG   * Kubernetes => "kubernetes"
+10:04:41.137 DEBUG   * Docker => "docker"
+10:04:41.137 DEBUG   * AzureResourceManager => "azureresourcemanager"
+10:04:41.137 DEBUG   * YAML => "yaml"
+10:04:41.137 DEBUG   * JSON => "json"
+10:04:41.137 DEBUG   * Text => "text"
+10:04:41.137 DEBUG   * Secrets => "secrets"
+10:04:41.137 DEBUG   * XML => "xml"
+10:04:41.137 DEBUG   * Java => "java"
+10:04:41.137 DEBUG   * HTML => "web"
+10:04:41.137 DEBUG   * JSP => "jsp"
+10:04:41.137 DEBUG   * JavaScript => "js"
+10:04:41.137 DEBUG   * TypeScript => "ts"
+10:04:41.137 DEBUG   * CSS => "css"
+10:04:41.140 INFO  Quality profile for css: Sonar way
+10:04:41.140 INFO  Quality profile for java: Sonar way
+10:04:41.140 INFO  Quality profile for js: Sonar way
+10:04:41.140 INFO  Quality profile for web: Sonar way
+10:04:41.140 INFO  Quality profile for xml: Sonar way
+10:04:41.140 INFO  ------------- Run sensors on module twttertrend
+10:04:41.300 INFO  Load metrics repository
+10:04:41.303 DEBUG --> GET https://sonarcloud.io/api/metrics/search?f=name,description,direction,qualitative&ps=500&p=1
+10:04:41.428 DEBUG <-- 200 https://sonarcloud.io/api/metrics/search?f=name,description,direction,qualitative&ps=500&p=1 (125ms, unknown-length body)
+10:04:41.444 INFO  Load metrics repository (done) | time=144ms
+10:04:41.455 INFO  Sensor cache enabled
+10:04:41.458 DEBUG Initialize GenericWsClient
+10:04:41.726 DEBUG Loaded [438] system trusted certificates
+10:04:41.743 INFO  Load sensor cache
+10:04:41.746 DEBUG --> GET https://api.sonarcloud.io/analysis/sensor-cache/prepare-read?organization=hema-01&project=hema-01_twttertrend
+10:04:42.715 DEBUG <-- 200 https://api.sonarcloud.io/analysis/sensor-cache/prepare-read?organization=hema-01&project=hema-01_twttertrend (967ms, 1504-byte body)
+10:04:42.777 DEBUG --> GET https://analysis-sensorcache-eu-central-1-prod.s3.amazonaws.com/AZGnN-mAG3YAroF3CDMF/AZGnOax9cUjvLIw7n9cX/AZGnOax9cUjvLIw7n9cX?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAXDIVECDB2QQU24S4%2F20240903%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20240903T100442Z&X-Amz-Expires=15&X-Amz-SignedHeaders=host&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKD%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDGV1LWNlbnRyYWwtMSJGMEQCIBNZDycmSEIcibPviyha0UGFStjWH91aMOSWO85twMBjAiB%2BdemgvrfM8VyxqiNJf%2B1BsgGvBg1dYKdoGfIGagdRrCq9Awi5%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAMaDDQ4ODA1OTk2NTYzNSIM86Pl8anzTcfE2H0hKpEDMX%2FgpnYotjPaSqoYxau0BT7E7RNmS%2B1JmXD632t5LLDEubFNtqMvFqQ%2FD%2BwlimW6IUOO0cc%2FDxPawgWfLv5HhRdxtRg05DdAFTVDyKxDo9iq1Zp3TOtKL4M0G2g%2B7fJjIxkNiOd0ozAZAhuCgiBfj%2FO8uEeLWe1BgPRHhjEiCsTF4BVhsmI5ywMAENSqyxyyJ%2FoOqUA94IMr9p3rmD6piJJXJtsmOcrz0U%2Bb7gDwDkBhqM%2FAJv3KZ3BbjHAw6Vvc1eRBIFp3RNu16UNhNYobaRipzaIVvChjbFUa0zTryAzndCPXWsqoZmPui7yhv0RBAg0iv583WUkFDkNKfgYjbYZraaa7nNZH6jTVj%2B1JBQouRttNihiEfvlkRemyHcsXuiOK23HN9UA0RRN9pCruGciM7MAxx8WyxNL%2Fe0D%2BmEhHxRQU45vIntH9jL2DCNvEiFFts7IE3CP%2B8GTf8PUc%2Fji2UiorPsDmIiockktydzrDoC2in%2BkKajDcSEwQ4GA4D2DymrTcrCqW9LQY3wc0w0swj%2FzatgY6nwGuuf0IAksFSQTzTjGKU1KpbcfLbS5MBTRG9YqqypsX30kzIT1xUGJ0f1GHNuYq9kutxxS25bwWuoEG%2FOzHi56wICIcBkUavO3%2B8KJMPPXonNdOWotzTAiMX5qZFloXGJ4WdL84F%2FDjkKgMTHBVx5ZUFCrP3nlcvT3Dn8PIEYudKcMZM8VioIIMh3s%2FI%2FQht6ikE%2Bylqg7CkUhoDxii1m4%3D&X-Amz-Signature=3d2a182bdece24db2f4d7b5aaf59c0b03c0ed597b5dde5eb7bb7c54bd162ee68
+10:04:43.327 DEBUG <-- 200 OK https://analysis-sensorcache-eu-central-1-prod.s3.amazonaws.com/AZGnN-mAG3YAroF3CDMF/AZGnOax9cUjvLIw7n9cX/AZGnOax9cUjvLIw7n9cX?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAXDIVECDB2QQU24S4%2F20240903%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20240903T100442Z&X-Amz-Expires=15&X-Amz-SignedHeaders=host&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKD%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDGV1LWNlbnRyYWwtMSJGMEQCIBNZDycmSEIcibPviyha0UGFStjWH91aMOSWO85twMBjAiB%2BdemgvrfM8VyxqiNJf%2B1BsgGvBg1dYKdoGfIGagdRrCq9Awi5%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAMaDDQ4ODA1OTk2NTYzNSIM86Pl8anzTcfE2H0hKpEDMX%2FgpnYotjPaSqoYxau0BT7E7RNmS%2B1JmXD632t5LLDEubFNtqMvFqQ%2FD%2BwlimW6IUOO0cc%2FDxPawgWfLv5HhRdxtRg05DdAFTVDyKxDo9iq1Zp3TOtKL4M0G2g%2B7fJjIxkNiOd0ozAZAhuCgiBfj%2FO8uEeLWe1BgPRHhjEiCsTF4BVhsmI5ywMAENSqyxyyJ%2FoOqUA94IMr9p3rmD6piJJXJtsmOcrz0U%2Bb7gDwDkBhqM%2FAJv3KZ3BbjHAw6Vvc1eRBIFp3RNu16UNhNYobaRipzaIVvChjbFUa0zTryAzndCPXWsqoZmPui7yhv0RBAg0iv583WUkFDkNKfgYjbYZraaa7nNZH6jTVj%2B1JBQouRttNihiEfvlkRemyHcsXuiOK23HN9UA0RRN9pCruGciM7MAxx8WyxNL%2Fe0D%2BmEhHxRQU45vIntH9jL2DCNvEiFFts7IE3CP%2B8GTf8PUc%2Fji2UiorPsDmIiockktydzrDoC2in%2BkKajDcSEwQ4GA4D2DymrTcrCqW9LQY3wc0w0swj%2FzatgY6nwGuuf0IAksFSQTzTjGKU1KpbcfLbS5MBTRG9YqqypsX30kzIT1xUGJ0f1GHNuYq9kutxxS25bwWuoEG%2FOzHi56wICIcBkUavO3%2B8KJMPPXonNdOWotzTAiMX5qZFloXGJ4WdL84F%2FDjkKgMTHBVx5ZUFCrP3nlcvT3Dn8PIEYudKcMZM8VioIIMh3s%2FI%2FQht6ikE%2Bylqg7CkUhoDxii1m4%3D&X-Amz-Signature=3d2a182bdece24db2f4d7b5aaf59c0b03c0ed597b5dde5eb7bb7c54bd162ee68 (550ms, 9112-byte body)
+10:04:43.334 INFO  Load sensor cache (8 KB) | time=1591ms
+10:04:43.778 DEBUG Added 303 checks for language='ts', repository='typescript'
+10:04:43.792 DEBUG Added 15 checks for language='ts', repository='tssecurity'
+10:04:43.797 DEBUG Added 305 checks for language='js', repository='javascript'
+10:04:43.798 DEBUG Added 15 checks for language='js', repository='jssecurity'
+10:04:45.578 DEBUG 'Import external issues report' skipped because one of the required properties is missing
+10:04:45.580 DEBUG 'IaC Terraform Sensor' skipped because there is no related file in current project
+10:04:45.582 DEBUG 'IaC CloudFormation Sensor' skipped because there is no related file in current project
+10:04:45.582 DEBUG 'IaC Kubernetes Sensor' skipped because there is no related file in current project
+10:04:45.583 DEBUG 'IaC AzureResourceManager Sensor' skipped because there is no related file in current project
+10:04:45.584 DEBUG 'JavaScript inside YAML analysis' skipped because there is no related file in current project
+10:04:45.586 DEBUG 'JavaScript/TypeScript Coverage' skipped because one of the required properties is missing
+10:04:45.587 DEBUG 'Import of ESLint issues' skipped because one of the required properties is missing
+10:04:45.588 DEBUG 'Import of TSLint issues' skipped because one of the required properties is missing
+10:04:45.589 DEBUG 'Import of stylelint issues' skipped because one of the required properties is missing
+10:04:45.589 DEBUG 'Import of Checkstyle issues' skipped because one of the required properties is missing
+10:04:45.589 DEBUG 'Import of PMD issues' skipped because one of the required properties is missing
+10:04:45.592 DEBUG 'Import of SpotBugs issues' skipped because one of the required properties is missing
+10:04:45.592 DEBUG 'Removed properties sensor' skipped because one of the required properties is missing
+10:04:45.600 DEBUG 'Generic Coverage Report' skipped because one of the required properties is missing
+10:04:45.600 DEBUG 'Generic Test Executions Report' skipped because one of the required properties is missing
+10:04:45.603 DEBUG Sensors : JavaSensor -> JaCoCo XML Report Importer -> Java Config Sensor -> JavaScript/TypeScript analysis -> JavaScript inside HTML analysis -> CSS Rules -> CSS Metrics -> ThymeLeaf template sensor -> SurefireSensor -> HTML -> XML Sensor -> IaC Docker Sensor -> Serverless configuration file sensor -> AWS SAM template file sensor -> AWS SAM Inline template file sensor -> javabugs -> pythonbugs -> TextAndSecretsSensor -> JavaSecuritySensor -> CSharpSecuritySensor -> PhpSecuritySensor -> PythonSecuritySensor -> JsSecuritySensor
+10:04:45.606 INFO  Sensor JavaSensor [java]
+10:04:45.628 DEBUG Property 'sonar.java.jdkHome' resolved with:
+[]
+10:04:45.628 DEBUG Property 'sonar.java.libraries' resolved with:
+[]
+10:04:45.628 DEBUG Property 'sonar.java.jdkHome' resolved with:
+[]
+10:04:45.628 DEBUG Property 'sonar.java.test.libraries' resolved with:
+[]
+10:04:45.652 DEBUG Found 0 JSP files.
+10:04:45.652 INFO  Server-side caching is enabled. The Java analyzer will not try to leverage data from a previous analysis.
+10:04:45.658 INFO  Using ECJ batch to parse 5 Main java source files with batch size 12 KB.
+10:04:45.669 DEBUG 'src/test/java/com/valaxy/demo/DemoWorkshopApplicationTests.java' generated metadata with charset 'UTF-8'
+10:04:45.674 DEBUG 'src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java' generated metadata with charset 'UTF-8'
+10:04:45.674 DEBUG 'src/main/java/com/valaxy/demo/DemoWorkshopApplication.java' generated metadata with charset 'UTF-8'
+10:04:45.675 DEBUG 'src/test/java/com/valaxy/demo/AbstractTest.java' generated metadata with charset 'UTF-8'
+10:04:45.675 DEBUG 'src/test/java/com/valaxy/demo/RepositoryDetailsControllerTest.java' generated metadata with charset 'UTF-8'
+10:04:46.076 INFO  Starting batch processing.
+10:04:47.345 INFO  The Java analyzer cannot skip unchanged files in this context. A full analysis is performed for all files.
+10:04:48.451 DEBUG Analysis time of src/test/java/com/valaxy/demo/DemoWorkshopApplicationTests.java (1250ms)
+10:04:48.664 DEBUG Skipping method getTwitterTrends as it uses a not-yet-supported language feature: TryStatementTreeImpl
+10:04:48.680 DEBUG Incomplete Semantic, unknown variable type 'GHRepositorySearchBuilder' line 36 col 3
+10:04:48.685 DEBUG Incomplete Semantic, method invocation 'getMessage' line 72 col 46
+10:04:48.963 DEBUG Incomplete Semantic, method invocation 'getURL' line 65 col 46
+10:04:48.965 DEBUG Incomplete Semantic, method invocation 'getMessage' line 72 col 46
+10:04:48.973 DEBUG Incomplete Semantic, unknown variable type 'GHRepositorySearchBuilder' line 36 col 3
+10:04:48.973 DEBUG Incomplete Semantic, method invocation 'build' line 35 col 88
+10:04:48.973 DEBUG Incomplete Semantic, method invocation 'searchRepositories' line 36 col 46
+10:04:48.973 DEBUG Incomplete Semantic, method invocation 'getMessage' line 72 col 46
+10:04:48.976 DEBUG Incomplete Semantic, method invocation 'getProperty' line 42 col 28
+10:04:48.976 DEBUG Incomplete Semantic, method invocation 'getProperty' line 43 col 31
+10:04:48.976 DEBUG Incomplete Semantic, method invocation 'getProperty' line 44 col 28
+10:04:48.976 DEBUG Incomplete Semantic, method invocation 'getProperty' line 45 col 34
+10:04:48.976 DEBUG Incomplete Semantic, new class 'ConfigurationBuilder' line 47 col 33
+10:04:48.976 DEBUG Incomplete Semantic, new class 'TwitterFactory' line 53 col 27
+10:04:48.977 DEBUG Incomplete Semantic, method invocation 'getInstance' line 56 col 24
+10:04:48.979 DEBUG Incomplete Semantic, method invocation 'getPlaceTrends' line 60 col 28
+10:04:49.216 DEBUG Incomplete Semantic, method invocation 'run' line 10 col 21
+10:04:49.235 DEBUG Incomplete Semantic, method invocation 'run' line 10 col 21
+10:04:49.328 DEBUG Incomplete Semantic, method invocation 'build' line 28 col 73
+10:04:49.331 DEBUG Incomplete Semantic, method invocation 'writeValueAsString' line 32 col 29
+10:04:49.331 DEBUG Incomplete Semantic, method invocation 'readValue' line 38 col 29
+10:04:49.346 DEBUG Incomplete Semantic, method invocation 'build' line 28 col 73
+10:04:49.346 DEBUG Incomplete Semantic, method invocation 'writeValueAsString' line 32 col 29
+10:04:49.346 DEBUG Incomplete Semantic, new class 'ObjectMapper' line 31 col 41
+10:04:49.346 DEBUG Incomplete Semantic, method invocation 'readValue' line 38 col 29
+10:04:49.346 DEBUG Incomplete Semantic, new class 'ObjectMapper' line 37 col 41
+10:04:49.448 DEBUG Incomplete Semantic, method invocation 'assertEquals' line 28 col 3
+10:04:49.679 DEBUG [SE] Loaded 255 hardcoded method behaviors.
+10:04:49.699 DEBUG Incomplete Semantic, method invocation 'assertEquals' line 28 col 3
+10:04:49.699 DEBUG Incomplete Semantic, method invocation 'andReturn' line 26 col 48
+10:04:49.699 DEBUG Incomplete Semantic, method invocation 'getStatus' line 27 col 40
+10:04:49.761 INFO  100% analyzed
+10:04:49.761 INFO  Batch processing: Done.
+10:04:49.762 INFO  Did not optimize analysis for any files, performed a full analysis for all 5 files.
+10:04:49.766 DEBUG Could not write DBD Java frontend version to cache (key 'javabugs:dataVersion', value '1.30.0.10776')
+10:04:49.768 DEBUG Could not write DBD Java frontend version to cache (key 'javabugs:dataVersion', value '1.30.0.10776')
+10:04:49.768 DEBUG Could not write DBD Java frontend version to cache (key 'javabugs:dataVersion', value '1.30.0.10776')
+10:04:49.768 DEBUG Could not write DBD Java frontend version to cache (key 'javabugs:dataVersion', value '1.30.0.10776')
+10:04:49.770 DEBUG Could not write DBD Java frontend version to cache (key 'javabugs:dataVersion', value '1.30.0.10776')
+10:04:49.843 WARN  Dependencies/libraries were not provided for analysis of SOURCE files. The 'sonar.java.libraries' property is empty. Verify your configuration, as you might end up with less precise results.
+10:04:49.846 WARN  Unresolved imports/types have been detected during analysis. Enable DEBUG mode to see them.
+10:04:49.846 DEBUG Unresolved imports/types:
+- Autowired cannot be resolved to a type
+  * src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java
+  * src/test/java/com/valaxy/demo/AbstractTest.java
+
+- BeforeEach cannot be resolved to a type
+  * src/test/java/com/valaxy/demo/RepositoryDetailsControllerTest.java
+
+- ConfigurationBuilder cannot be resolved to a type
+  * src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java
+
+- Environment cannot be resolved to a type
+  * src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java
+
+- GHRepositorySearchBuilder cannot be resolved to a type
+  * src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java
+
+- GetMapping cannot be resolved to a type
+  * src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java
+
+- GitHub cannot be resolved to a type
+  * src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java
+
+- GitHubBuilder cannot be resolved to a type
+  * src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java
+
+- JsonMappingException cannot be resolved to a type
+  * src/test/java/com/valaxy/demo/AbstractTest.java
+
+- JsonParseException cannot be resolved to a type
+  * src/test/java/com/valaxy/demo/AbstractTest.java
+
+- JsonProcessingException cannot be resolved to a type
+  * src/test/java/com/valaxy/demo/AbstractTest.java
+
+- MockMvc cannot be resolved to a type
+  * src/test/java/com/valaxy/demo/AbstractTest.java
+  * src/test/java/com/valaxy/demo/RepositoryDetailsControllerTest.java
+
+- MvcResult cannot be resolved to a type
+  * src/test/java/com/valaxy/demo/RepositoryDetailsControllerTest.java
+
+- ObjectMapper cannot be resolved to a type
+  * src/test/java/com/valaxy/demo/AbstractTest.java
+
+- RequestMapping cannot be resolved to a type
+  * src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java
+
+- RequestParam cannot be resolved to a type
+  * src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java
+
+- RestController cannot be resolved to a type
+  * src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java
+
+- RunWith cannot be resolved to a type
+  * src/test/java/com/valaxy/demo/AbstractTest.java
+
+- SpringBootApplication cannot be resolved to a type
+  * src/main/java/com/valaxy/demo/DemoWorkshopApplication.java
+
+- SpringBootTest cannot be resolved to a type
+  * src/test/java/com/valaxy/demo/DemoWorkshopApplicationTests.java
+  * src/test/java/com/valaxy/demo/AbstractTest.java
+  * src/test/java/com/valaxy/demo/RepositoryDetailsControllerTest.java
+
+- SpringJUnit4ClassRunner cannot be resolved to a type
+  * src/test/java/com/valaxy/demo/AbstractTest.java
+
+- Test cannot be resolved to a type
+  * src/test/java/com/valaxy/demo/DemoWorkshopApplicationTests.java
+  * src/test/java/com/valaxy/demo/RepositoryDetailsControllerTest.java
+
+- The import com.fasterxml cannot be resolved
+  * src/test/java/com/valaxy/demo/AbstractTest.java
+
+- The import org.junit cannot be resolved
+  * src/test/java/com/valaxy/demo/DemoWorkshopApplicationTests.java
+  * src/test/java/com/valaxy/demo/AbstractTest.java
+  * src/test/java/com/valaxy/demo/RepositoryDetailsControllerTest.java
+
+- The import org.kohsuke cannot be resolved
+  * src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java
+
+- The import org.springframework cannot be resolved
+  * src/test/java/com/valaxy/demo/DemoWorkshopApplicationTests.java
+  * src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java
+  * src/main/java/com/valaxy/demo/DemoWorkshopApplication.java
+  * src/test/java/com/valaxy/demo/AbstractTest.java
+  * src/test/java/com/valaxy/demo/RepositoryDetailsControllerTest.java
+
+- The import twitter4j cannot be resolved
+  * src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java
+
+- Trend cannot be resolved to a type
+  * src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java
+
+- Trends cannot be resolved to a type
+  * src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java
+
+- Twitter cannot be resolved to a type
+  * src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java
+
+- TwitterException cannot be resolved to a type
+  * src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java
+
+- TwitterFactory cannot be resolved to a type
+  * src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java
+
+- WebAppConfiguration cannot be resolved to a type
+  * src/test/java/com/valaxy/demo/AbstractTest.java
+
+- WebApplicationContext cannot be resolved to a type
+  * src/test/java/com/valaxy/demo/AbstractTest.java
+10:04:49.848 WARN  Use of preview features have been detected during analysis. Enable DEBUG mode to see them.
+10:04:49.848 DEBUG Use of preview features:
+- MediaType cannot be resolved to a variable
+  * src/test/java/com/valaxy/demo/RepositoryDetailsControllerTest.java
+
+- MockMvcBuilders cannot be resolved
+  * src/test/java/com/valaxy/demo/AbstractTest.java
+
+- MockMvcRequestBuilders cannot be resolved
+  * src/test/java/com/valaxy/demo/RepositoryDetailsControllerTest.java
+
+- SpringApplication cannot be resolved
+  * src/main/java/com/valaxy/demo/DemoWorkshopApplication.java
+10:04:49.848 INFO  No "Test" source files to scan.
+10:04:49.848 INFO  No "Generated" source files to scan.
+10:04:49.848 INFO  Sensor JavaSensor [java] (done) | time=4242ms
+10:04:49.848 INFO  Sensor JaCoCo XML Report Importer [jacoco]
+10:04:49.860 INFO  Importing 1 report(s). Turn your logs in debug mode in order to see the exhaustive list.
+10:04:49.860 DEBUG Reading report '/home/ubuntu/jenkins/workspace/hema-multibranch_main/target/site/jacoco/jacoco.xml'
+10:04:50.015 INFO  Sensor JaCoCo XML Report Importer [jacoco] (done) | time=167ms
+10:04:50.019 INFO  Sensor Java Config Sensor [iac]
+10:04:50.034 DEBUG 'src/main/resources/application.properties' generated metadata with charset 'UTF-8'
+10:04:50.035 DEBUG File without identifier 'AWSTemplateFormatVersion': src/main/resources/application.properties
+10:04:50.087 INFO  1 source file to be analyzed
+10:04:50.231 INFO  1/1 source file has been analyzed
+10:04:50.233 INFO  Sensor Java Config Sensor [iac] (done) | time=214ms
+10:04:50.234 INFO  Sensor JavaScript/TypeScript analysis [javascript]
+10:04:50.242 DEBUG Deploying the bridge server into /home/ubuntu/jenkins/workspace/hema-multibranch_main/.scannerwork/.sonartmp/bridge-bundle
+10:04:53.710 INFO  Detected os: Linux arch: amd64 alpine: false. Platform: LINUX_X64
+10:04:53.713 DEBUG Lock acquired for extraction
+10:04:53.723 DEBUG Extracting embedded node to /home/ubuntu/.sonar/js/node-runtime/node
+10:04:57.389 DEBUG Launching command /home/ubuntu/.sonar/js/node-runtime/node -v
+10:04:57.421 DEBUG Deployed node version v20.9.0
+10:04:57.424 DEBUG Deploying custom rules bundle jar:file:/home/ubuntu/.sonar/cache/543e42e0bcff3aa93c24ed83f491cdae/sonar-securityjsfrontend-plugin.jar!/js-vulnerabilities-rules-1.0.0.tgz to /home/ubuntu/jenkins/workspace/hema-multibranch_main/.scannerwork/.sonartmp/bridge-bundle/package/custom-rules4291420759179215937
+10:04:57.434 DEBUG Starting server
+10:04:57.439 DEBUG Creating Node.js process to start the bridge server on port 45359 
+10:04:57.444 INFO  Using embedded Node.js runtime
+10:04:57.444 INFO  Using Node.js executable: '/home/ubuntu/.sonar/js/node-runtime/node'.
+10:04:57.444 DEBUG Checking Node.js version
+10:04:57.444 DEBUG Launching command /home/ubuntu/.sonar/js/node-runtime/node -v
+10:04:57.456 DEBUG Using Node.js v20.9.0.
+10:04:57.456 DEBUG Launching command /home/ubuntu/.sonar/js/node-runtime/node /home/ubuntu/jenkins/workspace/hema-multibranch_main/.scannerwork/.sonartmp/bridge-bundle/package/bin/server 45359 127.0.0.1 /home/ubuntu/jenkins/workspace/hema-multibranch_main/.scannerwork true false false /home/ubuntu/jenkins/workspace/hema-multibranch_main/.scannerwork/.sonartmp/bridge-bundle/package/custom-rules4291420759179215937/package
+10:05:04.318 INFO  Memory configuration: OS (957 MB), Node.js (490 MB).
+10:05:04.321 DEBUG Starting the bridge server
+10:05:04.349 DEBUG The bridge server is listening on port 45359
+10:05:04.382 DEBUG The worker thread is running
+10:05:04.544 DEBUG Bridge server started on port 45359 in 7110 ms
+10:05:04.586 DEBUG Analysis of unchanged files will not be skipped (current analysis requires all files to be analyzed)
+10:08:26.241 DEBUG Shutting down the worker
+10:12:34.599 ERROR Failure during analysis
+java.lang.IllegalStateException: The bridge server is unresponsive
+	at org.sonar.plugins.javascript.bridge.BridgeServerImpl.request(BridgeServerImpl.java:401)
+	at org.sonar.plugins.javascript.bridge.BridgeServerImpl.initLinter(BridgeServerImpl.java:350)
+	at org.sonar.plugins.javascript.bridge.BridgeServerImpl.initLinter(BridgeServerImpl.java:318)
+	at org.sonar.plugins.javascript.bridge.JsTsSensor.analyzeFiles(JsTsSensor.java:94)
+	at org.sonar.plugins.javascript.bridge.AbstractBridgeSensor.execute(AbstractBridgeSensor.java:74)
+	at org.sonar.scanner.sensor.AbstractSensorWrapper.analyse(AbstractSensorWrapper.java:63)
+	at org.sonar.scanner.sensor.ModuleSensorsExecutor.execute(ModuleSensorsExecutor.java:75)
+	at org.sonar.scanner.sensor.ModuleSensorsExecutor.lambda$execute$1(ModuleSensorsExecutor.java:48)
+	at org.sonar.scanner.sensor.ModuleSensorsExecutor.withModuleStrategy(ModuleSensorsExecutor.java:66)
+	at org.sonar.scanner.sensor.ModuleSensorsExecutor.execute(ModuleSensorsExecutor.java:48)
+	at org.sonar.scanner.scan.ModuleScanContainer.doAfterStart(ModuleScanContainer.java:64)
+	at org.sonar.core.platform.ComponentContainer.startComponents(ComponentContainer.java:123)
+	at org.sonar.core.platform.ComponentContainer.execute(ComponentContainer.java:109)
+	at org.sonar.scanner.scan.ProjectScanContainer.scan(ProjectScanContainer.java:192)
+	at org.sonar.scanner.scan.ProjectScanContainer.scanRecursively(ProjectScanContainer.java:188)
+	at org.sonar.scanner.scan.ProjectScanContainer.doAfterStart(ProjectScanContainer.java:159)
+	at org.sonar.core.platform.ComponentContainer.startComponents(ComponentContainer.java:123)
+	at org.sonar.core.platform.ComponentContainer.execute(ComponentContainer.java:109)
+	at org.sonar.scanner.bootstrap.ScannerContainer.doAfterStart(ScannerContainer.java:416)
+	at org.sonar.core.platform.ComponentContainer.startComponents(ComponentContainer.java:123)
+	at org.sonar.core.platform.ComponentContainer.execute(ComponentContainer.java:109)
+	at org.sonar.scanner.bootstrap.GlobalContainer.doAfterStart(GlobalContainer.java:128)
+	at org.sonar.core.platform.ComponentContainer.startComponents(ComponentContainer.java:123)
+	at org.sonar.core.platform.ComponentContainer.execute(ComponentContainer.java:109)
+	at org.sonar.batch.bootstrapper.Batch.doExecute(Batch.java:58)
+	at org.sonar.batch.bootstrapper.Batch.execute(Batch.java:52)
+	at org.sonarsource.scanner.lib.internal.batch.BatchIsolatedLauncher.execute(BatchIsolatedLauncher.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.sonarsource.scanner.lib.internal.IsolatedLauncherProxy.invoke(IsolatedLauncherProxy.java:62)
+	at jdk.proxy3/jdk.proxy3.$Proxy2.execute(Unknown Source)
+	at org.sonarsource.scanner.lib.InProcessScannerEngineFacade.doAnalyze(InProcessScannerEngineFacade.java:39)
+	at org.sonarsource.scanner.lib.ScannerEngineFacade.analyze(ScannerEngineFacade.java:61)
+	at org.sonarsource.scanner.cli.Main.analyze(Main.java:77)
+	at org.sonarsource.scanner.cli.Main.main(Main.java:63)
+Caused by: java.net.http.HttpTimeoutException: request timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:571)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
+	at org.sonar.plugins.javascript.bridge.BridgeServerImpl.request(BridgeServerImpl.java:396)
+	... 36 common frames omitted
+
+10:12:39.083 DEBUG Shutting down the worker
+10:12:44.134 INFO  Hit the cache for 0 out of 0
+10:12:55.187 INFO  Miss the cache for 0 out of 0
+10:13:48.934 DEBUG Shutting down the worker
+10:13:58.782 ERROR isAlive was interrupted
+java.lang.InterruptedException: null
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:553)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
+	at org.sonar.plugins.javascript.bridge.BridgeServerImpl.isAlive(BridgeServerImpl.java:431)
+	at org.sonar.plugins.javascript.bridge.BridgeServerImpl.heartbeat(BridgeServerImpl.java:139)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+10:14:48.861 DEBUG Shutting down the worker
+10:52:48.598 WARN  Stopping of component org.sonar.plugins.javascript.bridge.BridgeServerImpl failed
+java.lang.IllegalStateException: The bridge server is unresponsive
+	at org.sonar.plugins.javascript.bridge.BridgeServerImpl.request(BridgeServerImpl.java:401)
+	at org.sonar.plugins.javascript.bridge.BridgeServerImpl.clean(BridgeServerImpl.java:511)
+	at org.sonar.plugins.javascript.bridge.BridgeServerImpl.stop(BridgeServerImpl.java:545)
+	at org.sonar.core.platform.StartableCloseableSafeLifecyleStrategy.stop(StartableCloseableSafeLifecyleStrategy.java:38)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.stop(AbstractInjectionFactory.java:88)
+	at org.picocontainer.behaviors.AbstractBehavior.stop(AbstractBehavior.java:179)
+	at org.picocontainer.behaviors.Stored$RealComponentLifecycle.stop(Stored.java:141)
+	at org.picocontainer.behaviors.Stored.stop(Stored.java:118)
+	at org.picocontainer.DefaultPicoContainer.stopAdapters(DefaultPicoContainer.java:1048)
+	at org.picocontainer.DefaultPicoContainer.stop(DefaultPicoContainer.java:803)
+	at org.sonar.core.platform.ComponentContainer.stopComponents(ComponentContainer.java:152)
+	at org.sonar.core.platform.ComponentContainer.execute(ComponentContainer.java:111)
+	at org.sonar.scanner.bootstrap.ScannerContainer.doAfterStart(ScannerContainer.java:416)
+	at org.sonar.core.platform.ComponentContainer.startComponents(ComponentContainer.java:123)
+	at org.sonar.core.platform.ComponentContainer.execute(ComponentContainer.java:109)
+	at org.sonar.scanner.bootstrap.GlobalContainer.doAfterStart(GlobalContainer.java:128)
+	at org.sonar.core.platform.ComponentContainer.startComponents(ComponentContainer.java:123)
+	at org.sonar.core.platform.ComponentContainer.execute(ComponentContainer.java:109)
+	at org.sonar.batch.bootstrapper.Batch.doExecute(Batch.java:58)
+	at org.sonar.batch.bootstrapper.Batch.execute(Batch.java:52)
+	at org.sonarsource.scanner.lib.internal.batch.BatchIsolatedLauncher.execute(BatchIsolatedLauncher.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.sonarsource.scanner.lib.internal.IsolatedLauncherProxy.invoke(IsolatedLauncherProxy.java:62)
+	at jdk.proxy3/jdk.proxy3.$Proxy2.execute(Unknown Source)
+	at org.sonarsource.scanner.lib.InProcessScannerEngineFacade.doAnalyze(InProcessScannerEngineFacade.java:39)
+	at org.sonarsource.scanner.lib.ScannerEngineFacade.analyze(ScannerEngineFacade.java:61)
+	at org.sonarsource.scanner.cli.Main.analyze(Main.java:77)
+	at org.sonarsource.scanner.cli.Main.main(Main.java:63)
+Caused by: java.net.http.HttpTimeoutException: request timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:571)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
+	at org.sonar.plugins.javascript.bridge.BridgeServerImpl.request(BridgeServerImpl.java:396)
+	... 30 common frames omitted
+

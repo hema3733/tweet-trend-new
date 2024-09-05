@@ -1,0 +1,728 @@
++ /home/ubuntu/jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/valaxy-sonar-scanner/bin/sonar-scanner
+09:57:09.219 INFO  Scanner configuration file: /home/ubuntu/jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/valaxy-sonar-scanner/conf/sonar-scanner.properties
+09:57:09.225 INFO  Project root configuration file: /home/ubuntu/jenkins/workspace/hema-multibranch_main/sonar-project.properties
+09:57:09.270 INFO  SonarScanner CLI 6.1.0.4477
+09:57:09.279 INFO  Java 17.0.12 Ubuntu (64-bit)
+09:57:09.279 INFO  Linux 6.8.0-1014-aws amd64
+09:57:09.300 DEBUG Scanner max available memory: 232 MB
+09:57:09.360 DEBUG uname -m returned 'x86_64'
+09:57:09.363 DEBUG Create: /home/ubuntu/.sonar/cache
+09:57:09.365 INFO  User cache: /home/ubuntu/.sonar/cache
+09:57:09.365 DEBUG Create: /home/ubuntu/.sonar/cache/_tmp
+09:57:10.367 DEBUG Loaded [438] system trusted certificates
+09:57:10.910 DEBUG --> GET https://sonarcloud.io/api/v2/analysis/version
+09:57:11.687 DEBUG <-- 404 https://sonarcloud.io/api/v2/analysis/version (776ms, unknown-length body)
+09:57:11.689 DEBUG --> GET https://sonarcloud.io/api/server/version
+09:57:11.910 DEBUG <-- 200 https://sonarcloud.io/api/server/version (220ms, 11-byte body)
+09:57:11.918 DEBUG Extract sonar-scanner-java-library-batch in temp...
+09:57:11.921 DEBUG Get bootstrap index...
+09:57:11.924 DEBUG --> GET https://sonarcloud.io/batch/index
+09:57:12.053 DEBUG <-- 200 https://sonarcloud.io/batch/index (129ms, 74-byte body)
+09:57:12.053 DEBUG Get bootstrap completed
+09:57:12.055 DEBUG Create isolated classloader...
+09:57:12.064 DEBUG Start temp cleaning...
+09:57:12.071 DEBUG Temp cleaning done
+09:57:12.074 INFO  Communicating with SonarQube Server 8.0.0.56443
+09:57:12.074 DEBUG Work directory: /home/ubuntu/jenkins/workspace/hema-multibranch_main/.scannerwork
+09:57:12.075 DEBUG Execution execute
+09:57:12.481 DEBUG JVM max available memory: 232 MB
+09:57:12.927 DEBUG Sonar User Home: /home/ubuntu/.sonar
+09:57:12.929 DEBUG Initialize DefaultScannerWsClient
+09:57:13.347 DEBUG Loaded [438] system trusted certificates
+09:57:13.540 INFO  Load global settings
+09:57:13.556 DEBUG --> GET https://sonarcloud.io/api/settings/values.protobuf
+09:57:14.253 DEBUG <-- 200 https://sonarcloud.io/api/settings/values.protobuf (696ms, unknown-length body)
+09:57:14.271 INFO  Load global settings (done) | time=731ms
+09:57:14.281 INFO  Server id: 1BD809FA-AWHW8ct9-T_TB3XqouNu
+09:57:14.286 DEBUG Initialize DownloadPluginsScannerWsClient
+09:57:14.573 DEBUG Loaded [438] system trusted certificates
+09:57:14.584 DEBUG User cache: /home/ubuntu/.sonar/cache
+09:57:14.596 INFO  Loading required plugins
+09:57:14.598 INFO  Load plugins index
+09:57:14.598 DEBUG --> GET https://sonarcloud.io/api/plugins/installed
+09:57:14.736 DEBUG <-- 200 https://sonarcloud.io/api/plugins/installed (136ms, unknown-length body)
+09:57:14.753 INFO  Load plugins index (done) | time=155ms
+09:57:14.754 INFO  Load/download plugins
+09:57:14.756 DEBUG Download plugin 'iac' to '/home/ubuntu/.sonar/_tmp/fileCache7481862158733041744.tmp'
+09:57:14.756 DEBUG --> GET https://scanner.sonarcloud.io/plugins/iac/versions/6f35ca3e99af24c55523de09f755b1b6.jar
+09:57:15.335 DEBUG <-- 200 https://scanner.sonarcloud.io/plugins/iac/versions/6f35ca3e99af24c55523de09f755b1b6.jar (578ms, 17593907-byte body)
+09:58:24.325 DEBUG Download plugin 'license' to '/home/ubuntu/.sonar/_tmp/fileCache9465199549820767505.tmp'
+09:58:24.326 DEBUG --> GET https://scanner.sonarcloud.io/plugins/license/versions/743d02251279595a18949f63efdaf7bf.jar
+09:58:24.514 DEBUG <-- 200 https://scanner.sonarcloud.io/plugins/license/versions/743d02251279595a18949f63efdaf7bf.jar (186ms, 17405-byte body)
+09:58:24.545 INFO  Load/download plugins (done) | time=69792ms
+09:58:24.546 DEBUG Plugins not loaded because they are optional: [abap, sonarapex, csharp, cpp, cobol, dbd, dbdjavafrontend, dbdpythonfrontend, flex, go, web, jcl, javasymbolicexecution, java, javascript, kotlin, php, pli, plsql, python, rpg, ruby, sonarscala, swift, tsql, vbnet, vb, security, securitycsharpfrontend, securityjsfrontend, securityjavafrontend, securityphpfrontend, securitypythonfrontend]
+09:58:24.602 DEBUG Plugins loaded:
+09:58:24.602 DEBUG   * JaCoCo 1.3.0.1538 (jacoco)
+09:58:24.602 DEBUG   * License for SonarLint 8.0.0.56443 (license)
+09:58:24.602 DEBUG   * IaC Code Quality and Security 1.34.0.12019 (iac)
+09:58:24.602 DEBUG   * Text Code Quality and Security 2.14.0.3782 (text)
+09:58:24.602 DEBUG   * XML Code Quality and Security 2.10.0.4108 (xml)
+09:58:24.602 DEBUG --> GET https://sonarcloud.io/api/server/version
+09:58:24.735 DEBUG <-- 200 https://sonarcloud.io/api/server/version (131ms, 11-byte body)
+09:58:24.737 DEBUG Updated analysis started with a difference of -67 milliseconds
+09:58:24.751 DEBUG Started at Wed Sep 04 09:57:14 UTC 2024
+09:58:25.189 DEBUG register org.eclipse.jgit.util.FS$FileStoreAttributes$$Lambda$412/0x000072316d350a38@178f268a with shutdown hook
+09:58:25.264 INFO  Found an active CI vendor: 'Jenkins'
+09:58:25.291 INFO  Load project settings for component key: 'hema-01_twttertrend'
+09:58:25.291 DEBUG --> GET https://sonarcloud.io/api/settings/values.protobuf?component=hema-01_twttertrend
+09:58:25.440 DEBUG <-- 200 https://sonarcloud.io/api/settings/values.protobuf?component=hema-01_twttertrend (148ms, unknown-length body)
+09:58:25.446 INFO  Load project settings for component key: 'hema-01_twttertrend' (done) | time=157ms
+09:58:25.458 INFO  Process project properties
+09:58:25.468 DEBUG Process project properties (done) | time=10ms
+09:58:25.472 INFO  Project key: hema-01_twttertrend
+09:58:25.472 INFO  Base dir: /home/ubuntu/jenkins/workspace/hema-multibranch_main
+09:58:25.472 INFO  Working dir: /home/ubuntu/jenkins/workspace/hema-multibranch_main/.scannerwork
+09:58:25.472 DEBUG Project global encoding: UTF-8, default locale: en
+09:58:25.474 DEBUG Creating module hierarchy
+09:58:25.474 DEBUG   Init module 'twttertrend'
+09:58:25.474 DEBUG     Base dir: /home/ubuntu/jenkins/workspace/hema-multibranch_main
+09:58:25.475 DEBUG     Working dir: /home/ubuntu/jenkins/workspace/hema-multibranch_main/.scannerwork
+09:58:25.475 DEBUG     Module global encoding: UTF-8, default locale: en
+09:58:25.487 INFO  Load project branches
+09:58:25.490 DEBUG --> GET https://sonarcloud.io/api/project_branches/list?project=hema-01_twttertrend
+09:58:25.643 DEBUG <-- 200 https://sonarcloud.io/api/project_branches/list?project=hema-01_twttertrend (152ms, unknown-length body)
+09:58:25.649 INFO  Load project branches (done) | time=162ms
+09:58:25.654 INFO  Check ALM binding of project 'hema-01_twttertrend'
+09:58:25.657 DEBUG --> GET https://sonarcloud.io/api/alm_integration/is_project_bound?project=hema-01_twttertrend
+09:58:25.788 DEBUG <-- 200 https://sonarcloud.io/api/alm_integration/is_project_bound?project=hema-01_twttertrend (130ms, unknown-length body)
+09:58:25.793 INFO  Detected project binding: NOT_BOUND
+09:58:25.793 INFO  Check ALM binding of project 'hema-01_twttertrend' (done) | time=139ms
+09:58:25.797 INFO  Load project pull requests
+09:58:25.798 DEBUG --> GET https://sonarcloud.io/api/project_pull_requests/list?project=hema-01_twttertrend
+09:58:25.930 DEBUG <-- 200 https://sonarcloud.io/api/project_pull_requests/list?project=hema-01_twttertrend (131ms, unknown-length body)
+09:58:25.936 INFO  Load project pull requests (done) | time=139ms
+09:58:25.946 INFO  Load branch configuration
+09:58:25.949 INFO  Load branch configuration (done) | time=3ms
+09:58:25.970 INFO  Load quality profiles
+09:58:25.971 DEBUG --> GET https://sonarcloud.io/api/qualityprofiles/search.protobuf?projectKey=hema-01_twttertrend&organization=hema-01
+09:58:26.189 DEBUG <-- 200 https://sonarcloud.io/api/qualityprofiles/search.protobuf?projectKey=hema-01_twttertrend&organization=hema-01 (217ms, 4383-byte body)
+09:58:26.217 INFO  Load quality profiles (done) | time=247ms
+09:58:26.231 INFO  Load active rules
+09:58:26.233 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDM1&ps=500&p=1
+09:58:26.383 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDM1&ps=500&p=1 (149ms, 5846-byte body)
+09:58:26.431 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMb&ps=500&p=1
+09:58:26.586 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMb&ps=500&p=1 (155ms, 7236-byte body)
+09:58:26.598 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMj&ps=500&p=1
+09:58:26.749 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMj&ps=500&p=1 (150ms, 8119-byte body)
+09:58:26.760 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMW&ps=500&p=1
+09:58:26.897 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMW&ps=500&p=1 (137ms, 11-byte body)
+09:58:26.901 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMw&ps=500&p=1
+09:58:27.089 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMw&ps=500&p=1 (188ms, unknown-length body)
+09:58:27.389 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMz&ps=500&p=1
+09:58:27.559 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMz&ps=500&p=1 (170ms, unknown-length body)
+09:58:27.802 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMV&ps=500&p=1
+09:58:28.005 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMV&ps=500&p=1 (200ms, unknown-length body)
+09:58:28.010 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMY&ps=500&p=1
+09:58:28.195 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMY&ps=500&p=1 (182ms, unknown-length body)
+09:58:28.199 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMZ&ps=500&p=1
+09:58:28.370 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMZ&ps=500&p=1 (170ms, unknown-length body)
+09:58:28.476 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMf&ps=500&p=1
+09:58:28.632 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMf&ps=500&p=1 (155ms, 2798-byte body)
+09:58:28.640 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDM2&ps=500&p=1
+09:58:28.862 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDM2&ps=500&p=1 (222ms, unknown-length body)
+09:58:29.275 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDM2&ps=500&p=2
+09:58:29.480 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDM2&ps=500&p=2 (205ms, unknown-length body)
+09:58:29.489 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMv&ps=500&p=1
+09:58:29.672 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMv&ps=500&p=1 (182ms, unknown-length body)
+09:58:29.676 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMU&ps=500&p=1
+09:58:29.859 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMU&ps=500&p=1 (182ms, unknown-length body)
+09:58:29.862 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMS&ps=500&p=1
+09:58:30.022 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMS&ps=500&p=1 (158ms, 6000-byte body)
+09:58:30.025 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMk&ps=500&p=1
+09:58:30.161 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMk&ps=500&p=1 (136ms, 11-byte body)
+09:58:30.164 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDM0&ps=500&p=1
+09:58:30.364 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDM0&ps=500&p=1 (200ms, unknown-length body)
+09:58:30.523 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMa&ps=500&p=1
+09:58:30.666 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMa&ps=500&p=1 (142ms, 288-byte body)
+09:58:30.669 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMT&ps=500&p=1
+09:58:30.842 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMT&ps=500&p=1 (172ms, unknown-length body)
+09:58:30.956 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMq&ps=500&p=1
+09:58:31.130 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMq&ps=500&p=1 (173ms, 7589-byte body)
+09:58:31.133 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMe&ps=500&p=1
+09:58:31.331 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMe&ps=500&p=1 (197ms, unknown-length body)
+09:58:31.343 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMl&ps=500&p=1
+09:58:31.479 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMl&ps=500&p=1 (135ms, 11-byte body)
+09:58:31.481 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMN&ps=500&p=1
+09:58:31.695 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMN&ps=500&p=1 (214ms, unknown-length body)
+09:58:32.047 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMp&ps=500&p=1
+09:58:32.249 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMp&ps=500&p=1 (202ms, unknown-length body)
+09:58:32.371 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMm&ps=500&p=1
+09:58:32.531 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMm&ps=500&p=1 (157ms, 6405-byte body)
+09:58:32.534 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMr&ps=500&p=1
+09:58:32.705 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMr&ps=500&p=1 (171ms, unknown-length body)
+09:58:32.788 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMt&ps=500&p=1
+09:58:32.957 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMt&ps=500&p=1 (168ms, 7367-byte body)
+09:58:32.960 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDM4&ps=500&p=1
+09:58:33.114 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDM4&ps=500&p=1 (154ms, 4412-byte body)
+09:58:33.116 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMd&ps=500&p=1
+09:58:33.308 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMd&ps=500&p=1 (192ms, unknown-length body)
+09:58:33.310 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMs&ps=500&p=1
+09:58:33.510 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMs&ps=500&p=1 (200ms, 6266-byte body)
+09:58:33.519 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDM3&ps=500&p=1
+09:58:33.713 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDM3&ps=500&p=1 (194ms, unknown-length body)
+09:58:33.746 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMg&ps=500&p=1
+09:58:33.915 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMg&ps=500&p=1 (168ms, 8036-byte body)
+09:58:33.919 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMy&ps=500&p=1
+09:58:34.172 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMy&ps=500&p=1 (252ms, unknown-length body)
+09:58:34.432 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMR&ps=500&p=1
+09:58:34.595 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMR&ps=500&p=1 (162ms, unknown-length body)
+09:58:34.649 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMo&ps=500&p=1
+09:58:34.832 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMo&ps=500&p=1 (182ms, unknown-length body)
+09:58:34.971 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMn&ps=500&p=1
+09:58:35.159 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMn&ps=500&p=1 (188ms, unknown-length body)
+09:58:35.162 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMc&ps=500&p=1
+09:58:35.325 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMc&ps=500&p=1 (163ms, unknown-length body)
+09:58:35.342 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMh&ps=500&p=1
+09:58:35.515 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMh&ps=500&p=1 (171ms, unknown-length body)
+09:58:35.552 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMP&ps=500&p=1
+09:58:35.760 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMP&ps=500&p=1 (207ms, unknown-length body)
+09:58:35.886 DEBUG --> GET https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMu&ps=500&p=1
+09:58:36.111 DEBUG <-- 200 https://sonarcloud.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AZGnN-mvG3YAroF3CDMu&ps=500&p=1 (225ms, unknown-length body)
+09:58:36.367 INFO  Load active rules (done) | time=10136ms
+09:58:36.450 DEBUG --> GET https://sonarcloud.io/api/languages/list
+09:58:36.575 DEBUG <-- 200 https://sonarcloud.io/api/languages/list (124ms, unknown-length body)
+09:58:36.597 INFO  Organization key: hema-01
+09:58:36.611 DEBUG Declared patterns of language Kubernetes were converted to sonar.lang.patterns.kubernetes : 
+09:58:36.612 DEBUG Declared patterns of language CSS were converted to sonar.lang.patterns.css : **/*.css,**/*.less,**/*.scss,**/*.sass
+09:58:36.614 DEBUG Declared patterns of language Scala were converted to sonar.lang.patterns.scala : **/*.scala
+09:58:36.615 DEBUG Declared patterns of language JSP were converted to sonar.lang.patterns.jsp : **/*.jsp,**/*.jspf,**/*.jspx
+09:58:36.615 DEBUG Declared patterns of language JavaScript were converted to sonar.lang.patterns.js : **/*.js,**/*.jsx,**/*.cjs,**/*.mjs,**/*.vue
+09:58:36.615 DEBUG Declared patterns of language Python were converted to sonar.lang.patterns.py : **/*.py
+09:58:36.615 DEBUG Declared patterns of language Apex were converted to sonar.lang.patterns.apex : **/*.cls,**/*.trigger
+09:58:36.615 DEBUG Declared patterns of language Docker were converted to sonar.lang.patterns.docker : **/Dockerfile,**/*.dockerfile
+09:58:36.616 DEBUG Declared patterns of language PL/SQL were converted to sonar.lang.patterns.plsql : **/*.sql,**/*.tab,**/*.pkb
+09:58:36.619 DEBUG Declared patterns of language JCL were converted to sonar.lang.patterns.jcl : **/*.jcl
+09:58:36.619 DEBUG Declared patterns of language Java were converted to sonar.lang.patterns.java : **/*.java,**/*.jav
+09:58:36.619 DEBUG Declared patterns of language HTML were converted to sonar.lang.patterns.web : **/*.html,**/*.xhtml,**/*.cshtml,**/*.vbhtml,**/*.aspx,**/*.ascx,**/*.rhtml,**/*.erb,**/*.shtm,**/*.shtml,**/*.cmp,**/*.twig
+09:58:36.620 DEBUG Declared patterns of language Flex were converted to sonar.lang.patterns.flex : **/*.as
+09:58:36.622 DEBUG Declared patterns of language XML were converted to sonar.lang.patterns.xml : **/*.xml,**/*.xsd,**/*.xsl,**/*.config
+09:58:36.622 DEBUG Declared patterns of language JSON were converted to sonar.lang.patterns.json : **/*.json
+09:58:36.622 DEBUG Declared patterns of language IPython Notebooks were converted to sonar.lang.patterns.ipynb : **/*.ipynb
+09:58:36.622 DEBUG Declared patterns of language Text were converted to sonar.lang.patterns.text : 
+09:58:36.622 DEBUG Declared patterns of language VB.NET were converted to sonar.lang.patterns.vbnet : **/*.vb
+09:58:36.622 DEBUG Declared patterns of language CloudFormation were converted to sonar.lang.patterns.cloudformation : 
+09:58:36.623 DEBUG Declared patterns of language Swift were converted to sonar.lang.patterns.swift : **/*.swift
+09:58:36.625 DEBUG Declared patterns of language YAML were converted to sonar.lang.patterns.yaml : **/*.yaml,**/*.yml
+09:58:36.625 DEBUG Declared patterns of language C++ were converted to sonar.lang.patterns.cpp : **/*.cc,**/*.cpp,**/*.cxx,**/*.c++,**/*.hh,**/*.hpp,**/*.hxx,**/*.h++,**/*.ipp,**/*.ixx,**/*.mxx,**/*.cppm,**/*.ccm,**/*.cxxm,**/*.c++m
+09:58:36.625 DEBUG Declared patterns of language C were converted to sonar.lang.patterns.c : **/*.c,**/*.h
+09:58:36.625 DEBUG Declared patterns of language Go were converted to sonar.lang.patterns.go : **/*.go
+09:58:36.627 DEBUG Declared patterns of language Kotlin were converted to sonar.lang.patterns.kotlin : **/*.kt,**/*.kts
+09:58:36.628 DEBUG Declared patterns of language RPG were converted to sonar.lang.patterns.rpg : **/*.rpg,**/*.rpgle,**/*.sqlrpgle,**/*.rpg,**/*.rpgle,**/*.sqlrpgle
+09:58:36.628 DEBUG Declared patterns of language PL/I were converted to sonar.lang.patterns.pli : **/*.pli
+09:58:36.628 DEBUG Declared patterns of language T-SQL were converted to sonar.lang.patterns.tsql : **/*.tsql
+09:58:36.628 DEBUG Declared patterns of language Vb were converted to sonar.lang.patterns.vb : **/*.bas,**/*.frm,**/*.ctl
+09:58:36.628 DEBUG Declared patterns of language Secrets were converted to sonar.lang.patterns.secrets : 
+09:58:36.628 DEBUG Declared patterns of language Ruby were converted to sonar.lang.patterns.ruby : **/*.rb
+09:58:36.628 DEBUG Declared patterns of language C# were converted to sonar.lang.patterns.cs : **/*.cs,**/*.razor
+09:58:36.632 DEBUG Declared patterns of language COBOL were converted to sonar.lang.patterns.cobol : 
+09:58:36.632 DEBUG Declared patterns of language PHP were converted to sonar.lang.patterns.php : **/*.php,**/*.php3,**/*.php4,**/*.php5,**/*.phtml,**/*.inc
+09:58:36.632 DEBUG Declared patterns of language Terraform were converted to sonar.lang.patterns.terraform : **/*.tf
+09:58:36.632 DEBUG Declared patterns of language AzureResourceManager were converted to sonar.lang.patterns.azureresourcemanager : **/*.bicep
+09:58:36.632 DEBUG Declared patterns of language ABAP were converted to sonar.lang.patterns.abap : **/*.abap,**/*.ab4,**/*.flow,**/*.asprog
+09:58:36.632 DEBUG Declared patterns of language Objective-C were converted to sonar.lang.patterns.objc : **/*.m
+09:58:36.635 DEBUG Declared patterns of language TypeScript were converted to sonar.lang.patterns.ts : **/*.ts,**/*.tsx,**/*.cts,**/*.mts
+09:58:36.643 INFO  Preprocessing files...
+09:58:36.696 DEBUG loading config FileBasedConfig[/home/ubuntu/.config/jgit/config]
+09:58:36.697 DEBUG readpipe [/usr/bin/git, --version],/usr/bin
+09:58:36.703 DEBUG readpipe may return 'git version 2.43.0'
+09:58:36.703 DEBUG remaining output:
+
+09:58:36.704 DEBUG readpipe [/usr/bin/git, config, --system, --show-origin, --list, -z],/usr/bin
+09:58:36.707 DEBUG readpipe may return 'null'
+09:58:36.707 DEBUG remaining output:
+
+09:58:36.710 DEBUG readpipe rc=128
+09:58:36.710 DEBUG Exception caught during execution of command '[/usr/bin/git, config, --system, --show-origin, --list, -z]' in '/usr/bin', return code '128', error message 'fatal: unable to read config file '/etc/gitconfig': No such file or directory
+'
+09:58:36.711 DEBUG loading config FileBasedConfig[/home/ubuntu/.config/git/config]
+09:58:36.712 DEBUG loading config UserConfigFile[/home/ubuntu/.gitconfig]
+09:58:36.871 DEBUG 106 non excluded files in this Git repository
+09:58:37.266 INFO  5 languages detected in 103 preprocessed files
+09:58:37.266 INFO  0 files ignored because of inclusion/exclusion patterns
+09:58:37.266 INFO  0 files ignored because of scm ignore settings
+09:58:37.273 DEBUG Could not detect the node.js version.
+09:58:37.277 INFO  Loading plugins for detected languages
+09:58:37.277 DEBUG Detected languages: [css, java, web, xml, js]
+09:58:37.277 INFO  Load/download plugins
+09:58:37.469 INFO  Load/download plugins (done) | time=192ms
+09:58:37.472 DEBUG Optional language-specific plugins not loaded: [abap, sonarapex, csharp, cpp, cobol, dbdpythonfrontend, flex, go, jcl, kotlin, php, pli, plsql, python, rpg, ruby, sonarscala, swift, tsql, vbnet, vb, securitycsharpfrontend, securityphpfrontend, securitypythonfrontend]
+09:58:37.600 DEBUG Plugins loaded:
+09:58:37.600 DEBUG   * Vulnerability Rules for Java 10.7.0-M1.32475 (securityjavafrontend)
+09:58:37.600 DEBUG   * Vulnerability Analysis 10.7.0-M1.32475 (security)
+09:58:37.600 DEBUG   * Vulnerability Rules for JS 10.7.0-M1.32475 (securityjsfrontend)
+09:58:37.600 DEBUG   * Java Code Quality and Security 8.2.0.36672 (java)
+09:58:37.600 DEBUG   * HTML Code Quality and Security 3.16.0.5274 (web)
+09:58:37.600 DEBUG   * Dataflow Bug Detection 1.30.0.10776 (dbd)
+09:58:37.600 DEBUG   * Dataflow Bug Detection Rules for Java 1.30.0.10776 (dbdjavafrontend)
+09:58:37.600 DEBUG   * Java Advanced Code Quality Analyzer 8.2.0.36672 (javasymbolicexecution)
+09:58:37.600 DEBUG   * JavaScript/TypeScript/CSS Code Quality and Security 10.14.0.26080 (javascript)
+09:58:38.129 INFO  Load project repositories
+09:58:38.130 DEBUG --> GET https://sonarcloud.io/batch/project.protobuf?key=hema-01_twttertrend
+09:58:38.350 DEBUG <-- 200 https://sonarcloud.io/batch/project.protobuf?key=hema-01_twttertrend (218ms, 1027-byte body)
+09:58:38.361 INFO  Load project repositories (done) | time=232ms
+09:58:38.374 INFO  Indexing files...
+09:58:38.374 INFO  Project configuration:
+09:58:38.375 INFO    Excluded sources: **/build-wrapper-dump.json
+09:58:38.383 DEBUG 'Jenkinsfile' indexed with language 'null'
+09:58:38.383 DEBUG 'pom.xml' indexed with language 'xml'
+09:58:38.385 DEBUG 'sonar-project.properties' indexed with language 'null'
+09:58:38.387 DEBUG 'README.md' indexed with language 'null'
+09:58:38.390 DEBUG 'jarstaging/com/valaxy/demo-workshop/maven-metadata.xml.sha1' indexed with language 'null'
+09:58:38.391 DEBUG 'jarstaging/com/valaxy/demo-workshop/maven-metadata.xml.md5' indexed with language 'null'
+09:58:38.394 DEBUG 'jarstaging/com/valaxy/demo-workshop/maven-metadata.xml' indexed with language 'xml'
+09:58:38.395 DEBUG 'jarstaging/com/valaxy/demo-workshop/2.1.2/demo-workshop-2.1.2.jar.sha1' indexed with language 'null'
+09:58:38.397 DEBUG 'jarstaging/com/valaxy/demo-workshop/2.1.2/demo-workshop-2.1.2.jar.md5' indexed with language 'null'
+09:58:38.399 DEBUG 'jarstaging/com/valaxy/demo-workshop/2.1.2/demo-workshop-2.1.2.pom.md5' indexed with language 'null'
+09:58:38.402 DEBUG 'jarstaging/com/valaxy/demo-workshop/2.1.2/demo-workshop-2.1.2.pom' indexed with language 'null'
+09:58:38.404 DEBUG 'jarstaging/com/valaxy/demo-workshop/2.1.2/demo-workshop-2.1.2.jar' indexed with language 'null'
+09:58:38.405 DEBUG 'jarstaging/com/valaxy/demo-workshop/2.1.2/demo-workshop-2.1.2.pom.sha1' indexed with language 'null'
+09:58:38.406 DEBUG 'target/site/jacoco/jacoco-sessions.html' indexed with language 'web'
+09:58:38.406 DEBUG 'target/site/jacoco/jacoco-resources/class.gif' indexed with language 'null'
+09:58:38.409 DEBUG 'target/site/jacoco/jacoco-resources/source.gif' indexed with language 'null'
+09:58:38.430 DEBUG 'target/site/jacoco/jacoco-resources/report.css' generated metadata with charset 'UTF-8'
+09:58:38.433 DEBUG Average line length for target/site/jacoco/jacoco-resources/report.css is 15
+09:58:38.458 DEBUG 'target/site/jacoco/jacoco-resources/report.css' indexed with language 'css'
+09:58:38.459 DEBUG 'target/site/jacoco/jacoco-resources/branchpc.gif' indexed with language 'null'
+09:58:38.502 DEBUG 'target/site/jacoco/jacoco-resources/prettify.js' generated metadata with charset 'UTF-8'
+09:58:38.509 DEBUG Average line length for target/site/jacoco/jacoco-resources/prettify.js is 38
+09:58:38.512 DEBUG 'target/site/jacoco/jacoco-resources/prettify.js' indexed with language 'js'
+09:58:38.518 DEBUG 'target/site/jacoco/jacoco-resources/sort.js' generated metadata with charset 'UTF-8'
+09:58:38.518 DEBUG Average line length for target/site/jacoco/jacoco-resources/sort.js is 24
+09:58:38.521 DEBUG File target/site/jacoco/jacoco-resources/sort.js was excluded because it looks like a bundle. (Disable detection with sonar.javascript.detectBundles=false)
+09:58:38.521 INFO  Some of the project files were automatically excluded because they looked like generated code. Enable debug logging to see which files were excluded. You can disable bundle detection by setting sonar.javascript.detectBundles=false
+09:58:38.521 DEBUG 'target/site/jacoco/jacoco-resources/sort.js' excluded by org.sonar.plugins.javascript.filter.JavaScriptExclusionsFileFilter
+09:58:38.527 DEBUG 'target/site/jacoco/jacoco-resources/session.gif' indexed with language 'null'
+09:58:38.531 DEBUG 'target/site/jacoco/jacoco-resources/greenbar.gif' indexed with language 'null'
+09:58:38.535 DEBUG 'target/site/jacoco/jacoco-resources/package.gif' indexed with language 'null'
+09:58:38.540 DEBUG 'target/site/jacoco/jacoco-resources/down.gif' indexed with language 'null'
+09:58:38.544 DEBUG 'target/site/jacoco/jacoco-resources/sort.gif' indexed with language 'null'
+09:58:38.546 DEBUG 'target/site/jacoco/jacoco-resources/branchnc.gif' indexed with language 'null'
+09:58:38.550 DEBUG 'target/site/jacoco/jacoco-resources/bundle.gif' indexed with language 'null'
+09:58:38.552 DEBUG 'target/site/jacoco/jacoco-resources/prettify.css' generated metadata with charset 'UTF-8'
+09:58:38.552 DEBUG Average line length for target/site/jacoco/jacoco-resources/prettify.css is 21
+09:58:38.553 DEBUG 'target/site/jacoco/jacoco-resources/prettify.css' indexed with language 'css'
+09:58:38.564 DEBUG 'target/site/jacoco/jacoco-resources/up.gif' indexed with language 'null'
+09:58:38.564 DEBUG 'target/site/jacoco/jacoco-resources/method.gif' indexed with language 'null'
+09:58:38.566 DEBUG 'target/site/jacoco/jacoco-resources/redbar.gif' indexed with language 'null'
+09:58:38.566 DEBUG 'target/site/jacoco/jacoco-resources/group.gif' indexed with language 'null'
+09:58:38.568 DEBUG 'target/site/jacoco/jacoco-resources/report.gif' indexed with language 'null'
+09:58:38.568 DEBUG 'target/site/jacoco/jacoco-resources/branchfc.gif' indexed with language 'null'
+09:58:38.568 DEBUG 'target/site/jacoco/com.stalin.demo/index.source.html' indexed with language 'web'
+09:58:38.568 DEBUG 'target/site/jacoco/com.stalin.demo/index.html' indexed with language 'web'
+09:58:38.568 DEBUG 'target/site/jacoco/com.stalin.demo/DemoWorkshopApplication.html' indexed with language 'web'
+09:58:38.569 DEBUG 'target/site/jacoco/index.html' indexed with language 'web'
+09:58:38.570 DEBUG 'target/site/jacoco/jacoco.xml' indexed with language 'xml'
+09:58:38.570 DEBUG 'target/site/jacoco/com.stalin.demo.controller/RepositoryDetailsController.html' indexed with language 'web'
+09:58:38.570 DEBUG 'target/site/jacoco/com.stalin.demo.controller/index.source.html' indexed with language 'web'
+09:58:38.570 DEBUG 'target/site/jacoco/com.stalin.demo.controller/index.html' indexed with language 'web'
+09:58:38.570 DEBUG 'target/site/jacoco/jacoco.csv' indexed with language 'null'
+09:58:38.572 DEBUG 'target/demo-workshop-2.1.2.jar.original' indexed with language 'null'
+09:58:38.573 DEBUG 'target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst' indexed with language 'null'
+09:58:38.574 DEBUG 'target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst' indexed with language 'null'
+09:58:38.576 DEBUG 'target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst' indexed with language 'null'
+09:58:38.578 DEBUG 'target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst' indexed with language 'null'
+09:58:38.578 DEBUG 'target/surefire-reports/2024-09-04T09-57-02_667.dumpstream' indexed with language 'null'
+09:58:38.580 DEBUG 'target/surefire-reports/2024-09-04T09-57-02_667-jvmRun1.dumpstream' indexed with language 'null'
+09:58:38.580 DEBUG 'target/jacoco.exec' indexed with language 'null'
+09:58:38.581 DEBUG 'target/reports/fonts/glyphicons-halflings-regular.svg' indexed with language 'null'
+09:58:38.583 DEBUG 'target/reports/fonts/glyphicons-halflings-regular.woff' indexed with language 'null'
+09:58:38.584 DEBUG 'target/reports/fonts/glyphicons-halflings-regular.ttf' indexed with language 'null'
+09:58:38.584 DEBUG 'target/reports/fonts/glyphicons-halflings-regular.eot' indexed with language 'null'
+09:58:38.586 DEBUG 'target/reports/css/print.css' generated metadata with charset 'UTF-8'
+09:58:38.586 DEBUG Average line length for target/reports/css/print.css is 12
+09:58:38.586 DEBUG 'target/reports/css/print.css' indexed with language 'css'
+09:58:38.586 DEBUG 'target/reports/css/apache-maven-fluido-2.0.0-M9.min.css' excluded by org.sonar.plugins.javascript.filter.JavaScriptExclusionsFileFilter
+09:58:38.588 DEBUG 'target/reports/css/site.css' generated metadata with charset 'UTF-8'
+09:58:38.588 DEBUG Average line length for target/reports/css/site.css is 0
+09:58:38.588 DEBUG 'target/reports/css/site.css' indexed with language 'css'
+09:58:38.589 DEBUG 'target/reports/js/apache-maven-fluido-2.0.0-M9.min.js' excluded by org.sonar.plugins.javascript.filter.JavaScriptExclusionsFileFilter
+09:58:38.591 DEBUG 'target/reports/surefire.html' indexed with language 'web'
+09:58:38.591 DEBUG 'target/reports/images/icon_warning_sml.gif' indexed with language 'null'
+09:58:38.592 DEBUG 'target/reports/images/package-x-generic.png' indexed with language 'null'
+09:58:38.594 DEBUG 'target/reports/images/application-certificate.png' indexed with language 'null'
+09:58:38.594 DEBUG 'target/reports/images/remove.gif' indexed with language 'null'
+09:58:38.595 DEBUG 'target/reports/images/contact-new.png' indexed with language 'null'
+09:58:38.598 DEBUG 'target/reports/images/profiles/sandbox.png' indexed with language 'null'
+09:58:38.598 DEBUG 'target/reports/images/profiles/retired.png' indexed with language 'null'
+09:58:38.600 DEBUG 'target/reports/images/profiles/pre-release.png' indexed with language 'null'
+09:58:38.600 DEBUG 'target/reports/images/network-server.png' indexed with language 'null'
+09:58:38.601 DEBUG 'target/reports/images/logos/build-by-maven-white.png' indexed with language 'null'
+09:58:38.602 DEBUG 'target/reports/images/logos/maven-feather.png' indexed with language 'null'
+09:58:38.603 DEBUG 'target/reports/images/logos/build-by-maven-black.png' indexed with language 'null'
+09:58:38.603 DEBUG 'target/reports/images/drive-harddisk.png' indexed with language 'null'
+09:58:38.608 DEBUG 'target/reports/images/apache-maven-project-2.png' indexed with language 'null'
+09:58:38.608 DEBUG 'target/reports/images/accessories-text-editor.png' indexed with language 'null'
+09:58:38.608 DEBUG 'target/reports/images/window-new.png' indexed with language 'null'
+09:58:38.610 DEBUG 'target/reports/images/icon_info_sml.gif' indexed with language 'null'
+09:58:38.611 DEBUG 'target/reports/images/fix.gif' indexed with language 'null'
+09:58:38.611 DEBUG 'target/reports/images/update.gif' indexed with language 'null'
+09:58:38.612 DEBUG 'target/reports/images/icon_error_sml.gif' indexed with language 'null'
+09:58:38.614 DEBUG 'target/reports/images/image-x-generic.png' indexed with language 'null'
+09:58:38.615 DEBUG 'target/reports/images/icon_success_sml.gif' indexed with language 'null'
+09:58:38.615 DEBUG 'target/reports/images/icon_help_sml.gif' indexed with language 'null'
+09:58:38.616 DEBUG 'target/reports/images/add.gif' indexed with language 'null'
+09:58:38.616 DEBUG 'target/reports/images/document-properties.png' indexed with language 'null'
+09:58:38.616 DEBUG 'target/reports/images/rss.png' indexed with language 'null'
+09:58:38.620 DEBUG 'target/reports/images/internet-web-browser.png' indexed with language 'null'
+09:58:38.620 DEBUG 'target/reports/img/glyphicons-halflings.png' indexed with language 'null'
+09:58:38.623 DEBUG 'target/reports/img/glyphicons-halflings-white.png' indexed with language 'null'
+09:58:38.623 DEBUG 'target/classes/application.properties' indexed with language 'null'
+09:58:38.624 DEBUG 'target/classes/com/stalin/demo/controller/RepositoryDetailsController.class' indexed with language 'null'
+09:58:38.624 DEBUG 'target/classes/com/stalin/demo/DemoWorkshopApplication.class' indexed with language 'null'
+09:58:38.624 DEBUG 'target/demo-workshop-2.1.2.jar' indexed with language 'null'
+09:58:38.626 DEBUG 'target/test-classes/com/stalin/demo/DemoWorkshopApplicationTests.class' indexed with language 'null'
+09:58:38.626 DEBUG 'target/test-classes/com/stalin/demo/AbstractTest.class' indexed with language 'null'
+09:58:38.628 DEBUG 'target/test-classes/com/stalin/demo/RepositoryDetailsControllerTest.class' indexed with language 'null'
+09:58:38.628 DEBUG 'target/maven-archiver/pom.properties' indexed with language 'null'
+09:58:38.628 DEBUG 'src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java' indexed with language 'java'
+09:58:38.630 DEBUG 'src/main/java/com/valaxy/demo/DemoWorkshopApplication.java' indexed with language 'java'
+09:58:38.630 DEBUG 'src/main/resources/application.properties' indexed with language 'null'
+09:58:38.630 DEBUG 'src/test/java/com/valaxy/demo/RepositoryDetailsControllerTest.java' indexed with language 'java'
+09:58:38.630 DEBUG 'src/test/java/com/valaxy/demo/DemoWorkshopApplicationTests.java' indexed with language 'java'
+09:58:38.631 DEBUG 'src/test/java/com/valaxy/demo/AbstractTest.java' indexed with language 'java'
+09:58:38.634 INFO  100 files indexed
+09:58:38.647 DEBUG Available languages:
+09:58:38.648 DEBUG   * Terraform => "terraform"
+09:58:38.649 DEBUG   * CloudFormation => "cloudformation"
+09:58:38.649 DEBUG   * Kubernetes => "kubernetes"
+09:58:38.649 DEBUG   * Docker => "docker"
+09:58:38.649 DEBUG   * AzureResourceManager => "azureresourcemanager"
+09:58:38.649 DEBUG   * YAML => "yaml"
+09:58:38.649 DEBUG   * JSON => "json"
+09:58:38.649 DEBUG   * Text => "text"
+09:58:38.649 DEBUG   * Secrets => "secrets"
+09:58:38.649 DEBUG   * XML => "xml"
+09:58:38.650 DEBUG   * Java => "java"
+09:58:38.650 DEBUG   * HTML => "web"
+09:58:38.650 DEBUG   * JSP => "jsp"
+09:58:38.650 DEBUG   * JavaScript => "js"
+09:58:38.650 DEBUG   * TypeScript => "ts"
+09:58:38.650 DEBUG   * CSS => "css"
+09:58:38.650 INFO  Quality profile for css: Sonar way
+09:58:38.650 INFO  Quality profile for java: Sonar way
+09:58:38.650 INFO  Quality profile for js: Sonar way
+09:58:38.650 INFO  Quality profile for web: Sonar way
+09:58:38.650 INFO  Quality profile for xml: Sonar way
+09:58:38.650 INFO  ------------- Run sensors on module twttertrend
+09:58:38.791 INFO  Load metrics repository
+09:58:38.793 DEBUG --> GET https://sonarcloud.io/api/metrics/search?f=name,description,direction,qualitative&ps=500&p=1
+09:58:38.920 DEBUG <-- 200 https://sonarcloud.io/api/metrics/search?f=name,description,direction,qualitative&ps=500&p=1 (126ms, unknown-length body)
+09:58:38.931 INFO  Load metrics repository (done) | time=140ms
+09:58:38.948 INFO  Sensor cache enabled
+09:58:38.951 DEBUG Initialize GenericWsClient
+09:58:39.219 DEBUG Loaded [438] system trusted certificates
+09:58:39.235 INFO  Load sensor cache
+09:58:39.239 DEBUG --> GET https://api.sonarcloud.io/analysis/sensor-cache/prepare-read?organization=hema-01&project=hema-01_twttertrend
+09:58:40.259 DEBUG <-- 200 https://api.sonarcloud.io/analysis/sensor-cache/prepare-read?organization=hema-01&project=hema-01_twttertrend (1020ms, 1510-byte body)
+09:58:40.300 DEBUG --> GET https://analysis-sensorcache-eu-central-1-prod.s3.amazonaws.com/AZGnN-mAG3YAroF3CDMF/AZGnOax9cUjvLIw7n9cX/AZGnOax9cUjvLIw7n9cX?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAXDIVECDBVL2PFI3J%2F20240904%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20240904T095840Z&X-Amz-Expires=15&X-Amz-SignedHeaders=host&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELr%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDGV1LWNlbnRyYWwtMSJHMEUCIAGP2vsErEi6u%2FA1Bm1wKdeU7SHcIznsQGN%2BDd8hU0GaAiEAyV1oAiDWtgnbj%2FJhHjne8e%2BISJZeC0MeDBbh9VWtq9gqvQMI0%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARADGgw0ODgwNTk5NjU2MzUiDHEfyNF%2FbfE0GJ5gQCqRAz4NwoZN7kgsqjFupjPZkBQG56wvAcgMeOOzuhfhZJw1NV1cJAIIXBxFetEdTrnYWtZrBa9A77D9zShI2HhlqkSOOXj9kmXt%2Fnt3ZvZdRiRgGgHs8KU%2FnX9LPAVoEZQidD6bMfDhRQU08%2BFhE6Q%2BLrjHGEAiK5kp8u5aCzlgsLCg2xLtpIrCW%2BnisJtssyT7LnVuOKg1eCgISktn%2BHd6K76V5j7HwY5P9yAMsSpHVF4tLN9Z%2BepSabY2Ly6wI%2F5SBdsVw1HcR1gSpCEp7E53YyDx%2BnGuszNdJ0%2BUhiuTVC6mjI79VVceQjhoG23CgmcUmbG4mTNzgfsdlYypVp8HfdEeleDqhBirpH7dAfjkoKChIcDBzxjT5x7k%2BRCVq00cREIADXDl%2Foh9VeBPefGCl2ehtB%2B7QfJlGE5CyvjD93pH3pGemdDhYQEKtq1mIyBjsIRr6K%2FjgTYYP9ljdw7kTdI6i6%2B2%2BrgbC8UWVujA9Vx%2BnbXp2Z3Yogi0ZvndVDAv0mAiF2Pu2CxfOT8nNIDoZjjyMMHZ4LYGOp4BEt2s5IOzdZy2iCBPR%2FxUR4AbUxUF%2FiiQgm0mxJ7RrB27l5j1UzJ9pxdWLAQ%2BGUXGcsi8S8iLIlO4b8CcHGOOzCNrU%2FW3lhAs5O6XQECR5gRmCG%2FsH3gkzuC5vsSrKvxMaGawEXPdPxjfk7YOn1rZuattCjL7BInpQj2uJMELQQwrhkfLh6awUyVANY4UPUoNbDGvHTTBCnRyOfvxCzg%3D&X-Amz-Signature=47fa0d85bc5165caff6f9aeb2cfad21435545cd25f992029407c09545c612bb3
+09:58:40.889 DEBUG <-- 200 OK https://analysis-sensorcache-eu-central-1-prod.s3.amazonaws.com/AZGnN-mAG3YAroF3CDMF/AZGnOax9cUjvLIw7n9cX/AZGnOax9cUjvLIw7n9cX?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAXDIVECDBVL2PFI3J%2F20240904%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20240904T095840Z&X-Amz-Expires=15&X-Amz-SignedHeaders=host&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELr%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDGV1LWNlbnRyYWwtMSJHMEUCIAGP2vsErEi6u%2FA1Bm1wKdeU7SHcIznsQGN%2BDd8hU0GaAiEAyV1oAiDWtgnbj%2FJhHjne8e%2BISJZeC0MeDBbh9VWtq9gqvQMI0%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARADGgw0ODgwNTk5NjU2MzUiDHEfyNF%2FbfE0GJ5gQCqRAz4NwoZN7kgsqjFupjPZkBQG56wvAcgMeOOzuhfhZJw1NV1cJAIIXBxFetEdTrnYWtZrBa9A77D9zShI2HhlqkSOOXj9kmXt%2Fnt3ZvZdRiRgGgHs8KU%2FnX9LPAVoEZQidD6bMfDhRQU08%2BFhE6Q%2BLrjHGEAiK5kp8u5aCzlgsLCg2xLtpIrCW%2BnisJtssyT7LnVuOKg1eCgISktn%2BHd6K76V5j7HwY5P9yAMsSpHVF4tLN9Z%2BepSabY2Ly6wI%2F5SBdsVw1HcR1gSpCEp7E53YyDx%2BnGuszNdJ0%2BUhiuTVC6mjI79VVceQjhoG23CgmcUmbG4mTNzgfsdlYypVp8HfdEeleDqhBirpH7dAfjkoKChIcDBzxjT5x7k%2BRCVq00cREIADXDl%2Foh9VeBPefGCl2ehtB%2B7QfJlGE5CyvjD93pH3pGemdDhYQEKtq1mIyBjsIRr6K%2FjgTYYP9ljdw7kTdI6i6%2B2%2BrgbC8UWVujA9Vx%2BnbXp2Z3Yogi0ZvndVDAv0mAiF2Pu2CxfOT8nNIDoZjjyMMHZ4LYGOp4BEt2s5IOzdZy2iCBPR%2FxUR4AbUxUF%2FiiQgm0mxJ7RrB27l5j1UzJ9pxdWLAQ%2BGUXGcsi8S8iLIlO4b8CcHGOOzCNrU%2FW3lhAs5O6XQECR5gRmCG%2FsH3gkzuC5vsSrKvxMaGawEXPdPxjfk7YOn1rZuattCjL7BInpQj2uJMELQQwrhkfLh6awUyVANY4UPUoNbDGvHTTBCnRyOfvxCzg%3D&X-Amz-Signature=47fa0d85bc5165caff6f9aeb2cfad21435545cd25f992029407c09545c612bb3 (588ms, 9112-byte body)
+09:58:40.897 INFO  Load sensor cache (8 KB) | time=1662ms
+09:58:41.567 DEBUG Added 303 checks for language='ts', repository='typescript'
+09:58:41.578 DEBUG Added 15 checks for language='ts', repository='tssecurity'
+09:58:41.583 DEBUG Added 305 checks for language='js', repository='javascript'
+09:58:41.586 DEBUG Added 15 checks for language='js', repository='jssecurity'
+09:58:43.493 DEBUG 'Import external issues report' skipped because one of the required properties is missing
+09:58:43.496 DEBUG 'IaC Terraform Sensor' skipped because there is no related file in current project
+09:58:43.496 DEBUG 'IaC CloudFormation Sensor' skipped because there is no related file in current project
+09:58:43.496 DEBUG 'IaC Kubernetes Sensor' skipped because there is no related file in current project
+09:58:43.498 DEBUG 'IaC AzureResourceManager Sensor' skipped because there is no related file in current project
+09:58:43.498 DEBUG 'JavaScript inside YAML analysis' skipped because there is no related file in current project
+09:58:43.498 DEBUG 'JavaScript/TypeScript Coverage' skipped because one of the required properties is missing
+09:58:43.501 DEBUG 'Import of ESLint issues' skipped because one of the required properties is missing
+09:58:43.501 DEBUG 'Import of TSLint issues' skipped because one of the required properties is missing
+09:58:43.501 DEBUG 'Import of stylelint issues' skipped because one of the required properties is missing
+09:58:43.503 DEBUG 'Import of Checkstyle issues' skipped because one of the required properties is missing
+09:58:43.503 DEBUG 'Import of PMD issues' skipped because one of the required properties is missing
+09:58:43.503 DEBUG 'Import of SpotBugs issues' skipped because one of the required properties is missing
+09:58:43.505 DEBUG 'Removed properties sensor' skipped because one of the required properties is missing
+09:58:43.512 DEBUG 'Generic Coverage Report' skipped because one of the required properties is missing
+09:58:43.512 DEBUG 'Generic Test Executions Report' skipped because one of the required properties is missing
+09:58:43.515 DEBUG Sensors : JavaSensor -> JaCoCo XML Report Importer -> Java Config Sensor -> JavaScript/TypeScript analysis -> JavaScript inside HTML analysis -> CSS Rules -> CSS Metrics -> ThymeLeaf template sensor -> SurefireSensor -> HTML -> XML Sensor -> IaC Docker Sensor -> Serverless configuration file sensor -> AWS SAM template file sensor -> AWS SAM Inline template file sensor -> javabugs -> pythonbugs -> TextAndSecretsSensor -> JavaSecuritySensor -> CSharpSecuritySensor -> PhpSecuritySensor -> PythonSecuritySensor -> JsSecuritySensor
+09:58:43.516 INFO  Sensor JavaSensor [java]
+09:58:43.537 DEBUG Property 'sonar.java.jdkHome' resolved with:
+[]
+09:58:43.537 DEBUG Property 'sonar.java.libraries' resolved with:
+[]
+09:58:43.538 DEBUG Property 'sonar.java.jdkHome' resolved with:
+[]
+09:58:43.539 DEBUG Property 'sonar.java.test.libraries' resolved with:
+[]
+09:58:43.560 DEBUG Found 0 JSP files.
+09:58:43.561 INFO  Server-side caching is enabled. The Java analyzer will not try to leverage data from a previous analysis.
+09:58:43.564 INFO  Using ECJ batch to parse 5 Main java source files with batch size 12 KB.
+09:58:43.577 DEBUG 'src/test/java/com/valaxy/demo/DemoWorkshopApplicationTests.java' generated metadata with charset 'UTF-8'
+09:58:43.580 DEBUG 'src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java' generated metadata with charset 'UTF-8'
+09:58:43.582 DEBUG 'src/main/java/com/valaxy/demo/DemoWorkshopApplication.java' generated metadata with charset 'UTF-8'
+09:58:43.582 DEBUG 'src/test/java/com/valaxy/demo/AbstractTest.java' generated metadata with charset 'UTF-8'
+09:58:43.585 DEBUG 'src/test/java/com/valaxy/demo/RepositoryDetailsControllerTest.java' generated metadata with charset 'UTF-8'
+09:58:43.891 INFO  Starting batch processing.
+09:58:45.159 INFO  The Java analyzer cannot skip unchanged files in this context. A full analysis is performed for all files.
+09:58:46.344 DEBUG Analysis time of src/test/java/com/valaxy/demo/DemoWorkshopApplicationTests.java (1305ms)
+09:58:46.562 DEBUG Skipping method getTwitterTrends as it uses a not-yet-supported language feature: TryStatementTreeImpl
+09:58:46.579 DEBUG Incomplete Semantic, unknown variable type 'GHRepositorySearchBuilder' line 36 col 3
+09:58:46.586 DEBUG Incomplete Semantic, method invocation 'getMessage' line 72 col 46
+09:58:46.768 DEBUG Incomplete Semantic, method invocation 'getURL' line 65 col 46
+09:58:46.771 DEBUG Incomplete Semantic, method invocation 'getMessage' line 72 col 46
+09:58:46.779 DEBUG Incomplete Semantic, unknown variable type 'GHRepositorySearchBuilder' line 36 col 3
+09:58:46.779 DEBUG Incomplete Semantic, method invocation 'build' line 35 col 88
+09:58:46.779 DEBUG Incomplete Semantic, method invocation 'searchRepositories' line 36 col 46
+09:58:46.779 DEBUG Incomplete Semantic, method invocation 'getMessage' line 72 col 46
+09:58:46.782 DEBUG Incomplete Semantic, method invocation 'getProperty' line 42 col 28
+09:58:46.782 DEBUG Incomplete Semantic, method invocation 'getProperty' line 43 col 31
+09:58:46.782 DEBUG Incomplete Semantic, method invocation 'getProperty' line 44 col 28
+09:58:46.782 DEBUG Incomplete Semantic, method invocation 'getProperty' line 45 col 34
+09:58:46.783 DEBUG Incomplete Semantic, new class 'ConfigurationBuilder' line 47 col 33
+09:58:46.783 DEBUG Incomplete Semantic, new class 'TwitterFactory' line 53 col 27
+09:58:46.783 DEBUG Incomplete Semantic, method invocation 'getInstance' line 56 col 24
+09:58:46.783 DEBUG Incomplete Semantic, method invocation 'getPlaceTrends' line 60 col 28
+09:58:47.018 DEBUG Incomplete Semantic, method invocation 'run' line 10 col 21
+09:58:47.033 DEBUG Incomplete Semantic, method invocation 'run' line 10 col 21
+09:58:47.125 DEBUG Incomplete Semantic, method invocation 'build' line 28 col 73
+09:58:47.127 DEBUG Incomplete Semantic, method invocation 'writeValueAsString' line 32 col 29
+09:58:47.128 DEBUG Incomplete Semantic, method invocation 'readValue' line 38 col 29
+09:58:47.144 DEBUG Incomplete Semantic, method invocation 'build' line 28 col 73
+09:58:47.144 DEBUG Incomplete Semantic, method invocation 'writeValueAsString' line 32 col 29
+09:58:47.144 DEBUG Incomplete Semantic, new class 'ObjectMapper' line 31 col 41
+09:58:47.144 DEBUG Incomplete Semantic, method invocation 'readValue' line 38 col 29
+09:58:47.144 DEBUG Incomplete Semantic, new class 'ObjectMapper' line 37 col 41
+09:58:47.242 DEBUG Incomplete Semantic, method invocation 'assertEquals' line 28 col 3
+09:58:47.489 DEBUG [SE] Loaded 255 hardcoded method behaviors.
+09:58:47.506 DEBUG Incomplete Semantic, method invocation 'assertEquals' line 28 col 3
+09:58:47.508 DEBUG Incomplete Semantic, method invocation 'andReturn' line 26 col 48
+09:58:47.508 DEBUG Incomplete Semantic, method invocation 'getStatus' line 27 col 40
+09:58:47.576 INFO  100% analyzed
+09:58:47.577 INFO  Batch processing: Done.
+09:58:47.579 INFO  Did not optimize analysis for any files, performed a full analysis for all 5 files.
+09:58:47.581 DEBUG Could not write DBD Java frontend version to cache (key 'javabugs:dataVersion', value '1.30.0.10776')
+09:58:47.583 DEBUG Could not write DBD Java frontend version to cache (key 'javabugs:dataVersion', value '1.30.0.10776')
+09:58:47.583 DEBUG Could not write DBD Java frontend version to cache (key 'javabugs:dataVersion', value '1.30.0.10776')
+09:58:47.584 DEBUG Could not write DBD Java frontend version to cache (key 'javabugs:dataVersion', value '1.30.0.10776')
+09:58:47.586 DEBUG Could not write DBD Java frontend version to cache (key 'javabugs:dataVersion', value '1.30.0.10776')
+09:58:47.646 WARN  Dependencies/libraries were not provided for analysis of SOURCE files. The 'sonar.java.libraries' property is empty. Verify your configuration, as you might end up with less precise results.
+09:58:47.649 WARN  Unresolved imports/types have been detected during analysis. Enable DEBUG mode to see them.
+09:58:47.650 DEBUG Unresolved imports/types:
+- Autowired cannot be resolved to a type
+  * src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java
+  * src/test/java/com/valaxy/demo/AbstractTest.java
+
+- BeforeEach cannot be resolved to a type
+  * src/test/java/com/valaxy/demo/RepositoryDetailsControllerTest.java
+
+- ConfigurationBuilder cannot be resolved to a type
+  * src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java
+
+- Environment cannot be resolved to a type
+  * src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java
+
+- GHRepositorySearchBuilder cannot be resolved to a type
+  * src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java
+
+- GetMapping cannot be resolved to a type
+  * src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java
+
+- GitHub cannot be resolved to a type
+  * src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java
+
+- GitHubBuilder cannot be resolved to a type
+  * src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java
+
+- JsonMappingException cannot be resolved to a type
+  * src/test/java/com/valaxy/demo/AbstractTest.java
+
+- JsonParseException cannot be resolved to a type
+  * src/test/java/com/valaxy/demo/AbstractTest.java
+
+- JsonProcessingException cannot be resolved to a type
+  * src/test/java/com/valaxy/demo/AbstractTest.java
+
+- MockMvc cannot be resolved to a type
+  * src/test/java/com/valaxy/demo/AbstractTest.java
+  * src/test/java/com/valaxy/demo/RepositoryDetailsControllerTest.java
+
+- MvcResult cannot be resolved to a type
+  * src/test/java/com/valaxy/demo/RepositoryDetailsControllerTest.java
+
+- ObjectMapper cannot be resolved to a type
+  * src/test/java/com/valaxy/demo/AbstractTest.java
+
+- RequestMapping cannot be resolved to a type
+  * src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java
+
+- RequestParam cannot be resolved to a type
+  * src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java
+
+- RestController cannot be resolved to a type
+  * src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java
+
+- RunWith cannot be resolved to a type
+  * src/test/java/com/valaxy/demo/AbstractTest.java
+
+- SpringBootApplication cannot be resolved to a type
+  * src/main/java/com/valaxy/demo/DemoWorkshopApplication.java
+
+- SpringBootTest cannot be resolved to a type
+  * src/test/java/com/valaxy/demo/DemoWorkshopApplicationTests.java
+  * src/test/java/com/valaxy/demo/AbstractTest.java
+  * src/test/java/com/valaxy/demo/RepositoryDetailsControllerTest.java
+
+- SpringJUnit4ClassRunner cannot be resolved to a type
+  * src/test/java/com/valaxy/demo/AbstractTest.java
+
+- Test cannot be resolved to a type
+  * src/test/java/com/valaxy/demo/DemoWorkshopApplicationTests.java
+  * src/test/java/com/valaxy/demo/RepositoryDetailsControllerTest.java
+
+- The import com.fasterxml cannot be resolved
+  * src/test/java/com/valaxy/demo/AbstractTest.java
+
+- The import org.junit cannot be resolved
+  * src/test/java/com/valaxy/demo/DemoWorkshopApplicationTests.java
+  * src/test/java/com/valaxy/demo/AbstractTest.java
+  * src/test/java/com/valaxy/demo/RepositoryDetailsControllerTest.java
+
+- The import org.kohsuke cannot be resolved
+  * src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java
+
+- The import org.springframework cannot be resolved
+  * src/test/java/com/valaxy/demo/DemoWorkshopApplicationTests.java
+  * src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java
+  * src/main/java/com/valaxy/demo/DemoWorkshopApplication.java
+  * src/test/java/com/valaxy/demo/AbstractTest.java
+  * src/test/java/com/valaxy/demo/RepositoryDetailsControllerTest.java
+
+- The import twitter4j cannot be resolved
+  * src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java
+
+- Trend cannot be resolved to a type
+  * src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java
+
+- Trends cannot be resolved to a type
+  * src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java
+
+- Twitter cannot be resolved to a type
+  * src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java
+
+- TwitterException cannot be resolved to a type
+  * src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java
+
+- TwitterFactory cannot be resolved to a type
+  * src/main/java/com/valaxy/demo/controller/RepositoryDetailsController.java
+
+- WebAppConfiguration cannot be resolved to a type
+  * src/test/java/com/valaxy/demo/AbstractTest.java
+
+- WebApplicationContext cannot be resolved to a type
+  * src/test/java/com/valaxy/demo/AbstractTest.java
+09:58:47.650 WARN  Use of preview features have been detected during analysis. Enable DEBUG mode to see them.
+09:58:47.650 DEBUG Use of preview features:
+- MediaType cannot be resolved to a variable
+  * src/test/java/com/valaxy/demo/RepositoryDetailsControllerTest.java
+
+- MockMvcBuilders cannot be resolved
+  * src/test/java/com/valaxy/demo/AbstractTest.java
+
+- MockMvcRequestBuilders cannot be resolved
+  * src/test/java/com/valaxy/demo/RepositoryDetailsControllerTest.java
+
+- SpringApplication cannot be resolved
+  * src/main/java/com/valaxy/demo/DemoWorkshopApplication.java
+09:58:47.650 INFO  No "Test" source files to scan.
+09:58:47.650 INFO  No "Generated" source files to scan.
+09:58:47.650 INFO  Sensor JavaSensor [java] (done) | time=4134ms
+09:58:47.654 INFO  Sensor JaCoCo XML Report Importer [jacoco]
+09:58:47.663 INFO  Importing 1 report(s). Turn your logs in debug mode in order to see the exhaustive list.
+09:58:47.663 DEBUG Reading report '/home/ubuntu/jenkins/workspace/hema-multibranch_main/target/site/jacoco/jacoco.xml'
+09:58:47.767 INFO  Sensor JaCoCo XML Report Importer [jacoco] (done) | time=113ms
+09:58:47.767 INFO  Sensor Java Config Sensor [iac]
+09:58:47.781 DEBUG 'src/main/resources/application.properties' generated metadata with charset 'UTF-8'
+09:58:47.782 DEBUG File without identifier 'AWSTemplateFormatVersion': src/main/resources/application.properties
+09:58:47.818 INFO  1 source file to be analyzed
+09:58:47.941 INFO  1/1 source file has been analyzed
+09:58:47.941 INFO  Sensor Java Config Sensor [iac] (done) | time=174ms
+09:58:47.943 INFO  Sensor JavaScript/TypeScript analysis [javascript]
+09:58:47.950 DEBUG Deploying the bridge server into /home/ubuntu/jenkins/workspace/hema-multibranch_main/.scannerwork/.sonartmp/bridge-bundle
+09:58:51.924 INFO  Detected os: Linux arch: amd64 alpine: false. Platform: LINUX_X64
+09:58:51.931 DEBUG Currently installed Node.js version: v20.9.0. Available version in analyzer: v20.9.0
+09:58:51.931 DEBUG Skipping node deploy. Deployed node has latest version.
+09:58:51.935 DEBUG Launching command /home/ubuntu/.sonar/js/node-runtime/node -v
+09:58:52.136 DEBUG Deployed node version v20.9.0
+09:58:52.136 DEBUG Deploying custom rules bundle jar:file:/home/ubuntu/.sonar/cache/543e42e0bcff3aa93c24ed83f491cdae/sonar-securityjsfrontend-plugin.jar!/js-vulnerabilities-rules-1.0.0.tgz to /home/ubuntu/jenkins/workspace/hema-multibranch_main/.scannerwork/.sonartmp/bridge-bundle/package/custom-rules18080908008494859241
+09:58:52.144 DEBUG Starting server
+09:58:52.163 DEBUG Creating Node.js process to start the bridge server on port 37955 
+09:58:52.165 INFO  Using embedded Node.js runtime
+09:58:52.165 INFO  Using Node.js executable: '/home/ubuntu/.sonar/js/node-runtime/node'.
+09:58:52.165 DEBUG Checking Node.js version
+09:58:52.165 DEBUG Launching command /home/ubuntu/.sonar/js/node-runtime/node -v
+09:58:52.172 DEBUG Using Node.js v20.9.0.
+09:58:52.172 DEBUG Launching command /home/ubuntu/.sonar/js/node-runtime/node /home/ubuntu/jenkins/workspace/hema-multibranch_main/.scannerwork/.sonartmp/bridge-bundle/package/bin/server 37955 127.0.0.1 /home/ubuntu/jenkins/workspace/hema-multibranch_main/.scannerwork true false false /home/ubuntu/jenkins/workspace/hema-multibranch_main/.scannerwork/.sonartmp/bridge-bundle/package/custom-rules18080908008494859241/package
+09:58:58.878 INFO  Memory configuration: OS (957 MB), Node.js (490 MB).
+09:58:58.881 DEBUG Starting the bridge server
+09:58:58.928 DEBUG The bridge server is listening on port 37955
+09:58:58.965 DEBUG The worker thread is running
+09:58:59.130 DEBUG Bridge server started on port 37955 in 6986 ms
+09:58:59.164 DEBUG Analysis of unchanged files will not be skipped (current analysis requires all files to be analyzed)
+09:59:05.966 DEBUG Initializing linter "default" with no-vue-bypass-sanitization,heading-has-content,hashing,for-loop-increment-sign,label-has-associated-control,img-redundant-alt,interactive-supports-focus,no-globals-shadowing,unverified-hostname,null-dereference,no-extra-arguments,no-absolute-path,no-redeclare,constructor-for-side-effects,post-message,cookie-no-httponly,no-noninteractive-element-to-interactive-role,no-interactive-element-to-noninteractive-role,weak-ssl,no-ignored-exceptions,autocomplete-valid,no-throw-literal,no-useless-increment,pseudo-random,tabindex-no-positive,no-access-key,no-nested-functions,session-regeneration,no-noninteractive-element-interactions,no-use-of-empty-return-value,anchor-is-valid,no-associative-arrays,no-weak-keys,confidential-information-logging,no-noninteractive-tabindex,no-ip-forward,no-static-element-interactions,single-character-alternation,aws-ec2-unencrypted-ebs-volume,unused-named-groups,single-char-in-character-classes,certificate-transparency,arguments-order,inconsistent-function-call,no-same-argument-assert,file-uploads,no-deprecated-react,no-case-declarations,sonar-no-misleading-character-class,no-inverted-boolean-check,duplicates-in-character-class,no-literal-call,reduce-initial-value,todo-tag,fixme-tag,aws-s3-bucket-public-access,aws-s3-bucket-granted-access,no-mixed-content,aria-role,anchor-precedence,frame-ancestors,no-angular-bypass-sanitization,slow-regex,stable-tests,array-callback-without-return,aria-unsupported-elements,no-mime-sniff,prefer-default-last,no-commented-code,no-aria-hidden-on-focusable,no-redundant-roles,no-gratuitous-expressions,no-referrer-policy,sonar-no-fallthrough,no-empty-pattern,sonar-no-invalid-regexp,aria-activedescendant-has-tabindex,strict-transport-security,anchor-has-content,aws-iam-public-access,no-unsafe-finally,prefer-while,sonar-no-unused-vars,index-of-compare-to-positive-number,argument-type,empty-string-repetition,in-operator-type-error,prefer-promise-shorthand,regex-complexity,role-supports-aria-props,assertions-in-tests,no-intrusive-permissions,disabled-resource-integrity,no-empty-after-reluctant,content-security-policy,no-labels,prefer-tag-over-role,no-uniq-key,no-unenclosed-multiline-block,call-argument-line,aws-s3-bucket-insecure-http,generator-without-yield,no-ignored-return,no-caller,csrf,cognitive-complexity,use-isnan,no-nested-template-literals,inverted-assertion-arguments,max-switch-cases,test-check-exception,role-has-required-aria-props,production-debug,unused-import,prefer-single-boolean-return,no-redundant-boolean,no-nested-assignment,aws-s3-bucket-versioning,no-unsafe-unzip,object-alt-content,sonar-prefer-regexp-exec,concise-regex,no-array-index-key,new-cap,jsx-key,updated-loop-counter,link-with-target-blank,no-setter-return,no-unstable-nested-components,different-types-comparison,no-case-label-in-switch,no-in-misuse,jsx-no-constructed-context-values,no-misleading-array-reverse,no-redundant-assignments,no-table-as-layout,table-header,os-command,no-invariant-returns,no-parameter-reassignment,table-header-reference,stateful-regex,aws-efs-unencrypted,aws-apigateway-public-api,aws-sqs-unencrypted-queue,cors,no-empty-group,no-accessor-field-mismatch,no-os-command-from-path,no-collection-size-mischeck,unverified-certificate,disabled-auto-escaping,no-empty-collection,updated-const-var,no-duplicates,no-unthrown-error,no-var,no-redundant-jump,no-octal,no-hardcoded-ip,sonar-prefer-optional-chain,aws-restricted-ip-admin-access,no-hook-setter-in-body,no-useless-react-setstate,rules-of-hooks,no-identical-functions,sonar-no-unused-class-component-methods,no-element-overwrite,prefer-regex-literals,sonar-no-regex-spaces,no-empty-alternatives,sonar-no-control-regex,no-same-line-conditional,aws-ec2-rds-dms-public,aws-sns-unencrypted-topics,super-invocation,no-try-promise,existing-groups,void-use,comma-or-logical-or-case,label-position,no-with,insecure-cookie,no-unused-collection,no-extraneous-class,prefer-promise-reject-errors,aria-proptypes,no-base-to-string,sql-queries,no-sequences,require-render-return,no-global-this,prefer-string-starts-ends-with,no-array-delete,no-alphabetical-sort,sonar-jsx-no-leaked-render,aws-sagemaker-unencrypted-notebook,prefer-for-of,no-self-compare,xml-parser-xxe,aws-iam-privilege-escalation,jsx-no-comment-textnodes,default-param-last,new-operator-misuse,non-existent-operator,sonar-no-empty-character-class,no-sparse-arrays,content-length,no-clear-text-protocols,no-lonely-if,prefer-object-spread,aws-rds-unencrypted-databases,no-empty-test-file,prefer-spread,no-equals-in-for-termination,no-invalid-await,no-find-dom-node,no-hardcoded-credentials,no-infinite-loop,aws-iam-all-privileges,no-misused-promises,valid-typeof,aws-opensearchservice-domain,no-is-mounted,no-primitive-wrappers,no-exclusive-tests,sonar-no-dupe-keys,no-new-native-nonconstructor,no-self-assign,no-dupe-args,no-small-switch,no-string-refs,no-unsafe,mouse-events-a11y,jsx-child-element-spacing,jsx-pascal-case,no-useless-rename,no-loss-of-precision,publicly-writable-directories,unnecessary-character-escapes,prefer-object-has-own,prop-types,no-incomplete-assertions,no-proto,default-props-match-prop-types,x-powered-by,no-unreachable,no-octal-escape,no-identical-expressions,file-permissions,code-eval,no-useless-catch,future-reserved-words,bitwise-operators,no-lone-blocks,alt-text,hidden-files,no-danger-with-children,iframe-has-title,no-unused-expressions,no-unneeded-ternary,no-unsafe-optional-chaining,no-empty,sonar-max-params,no-undef-init,no-redundant-should-component-update,no-duplicated-branches,no-extend-native,no-one-iteration-loop,misplaced-loop-counter,deprecation,no-unused-prop-types,no-useless-constructor,no-unsafe-negation,function-inside-loop,no-multi-str,class-name,chai-determinate-assertion,no-render-return-value,no-code-after-done,sonar-block-scoped-var,hook-use-state,no-delete-var,encryption-secure-mode,no-weak-cipher,no-extra-bind,no-identical-conditions,no-constant-binary-expression,no-constructor-return,no-this-in-sfc,function-return-type,no-all-duplicated-branches,disabled-timeout,no-mutable-exports,no-unknown-property,no-nested-conditional,no-children-prop,insecure-jwt-token,no-direct-mutation-state,no-dead-store,no-extra-boolean-cast,jsx-no-useless-fragment,no-implicit-global,no-unused-private-class-members,no-empty-function,no-commented-code,sonar-no-fallthrough,duplicates-in-character-class,no-inverted-boolean-check,no-literal-call,reduce-initial-value,file-uploads,no-deprecated-react,no-case-declarations,sonar-no-misleading-character-class,certificate-transparency,arguments-order,no-same-argument-assert,single-char-in-character-classes,aws-ec2-unencrypted-ebs-volume,unused-named-groups,no-unsafe-finally,prefer-while,single-character-alternation,aws-iam-public-access,no-ip-forward,prefer-nullish-coalescing,no-static-element-interactions,no-access-key,no-nested-functions,no-noninteractive-element-interactions,session-regeneration,no-use-of-empty-return-value,no-associative-arrays,no-noninteractive-tabindex,no-weak-keys,confidential-information-logging,no-noninteractive-element-to-interactive-role,no-interactive-element-to-noninteractive-role,autocomplete-valid,weak-ssl,no-ignored-exceptions,no-throw-literal,no-useless-increment,pseudo-random,tabindex-no-positive,no-redundant-optional,cookie-no-httponly,aws-s3-bucket-public-access,post-message,constructor-for-side-effects,no-absolute-path,no-globals-shadowing,unverified-hostname,label-has-associated-control,interactive-supports-focus,heading-has-content,hashing,for-loop-increment-sign,no-vue-bypass-sanitization,jsx-no-useless-fragment,no-extra-boolean-cast,no-unknown-property,no-nested-conditional,no-unnecessary-type-assertion,insecure-jwt-token,no-direct-mutation-state,no-dead-store,prefer-type-guard,use-type-alias,no-mutable-exports,no-in-misuse,no-parameter-reassignment,no-unstable-nested-components,prefer-function-type,jsx-key,new-cap,updated-loop-counter,link-with-target-blank,no-array-index-key,object-alt-content,concise-regex,sonar-prefer-regexp-exec,prefer-as-const,stateful-regex,test-check-exception,max-switch-cases,role-has-required-aria-props,production-debug,csrf,no-undefined-argument,cognitive-complexity,no-labels,use-isnan,no-nested-template-literals,inverted-assertion-arguments,aws-s3-bucket-insecure-http,no-duplicate-in-composite,generator-without-yield,no-ignored-return,no-caller,no-unenclosed-multiline-block,call-argument-line,no-uniq-key,jsx-no-constructed-context-values,prefer-tag-over-role,no-redundant-boolean,content-security-policy,prefer-promise-shorthand,regex-complexity,no-empty-after-reluctant,role-supports-aria-props,assertions-in-tests,no-intrusive-permissions,disabled-resource-integrity,unused-import,empty-string-repetition,no-nested-assignment,index-of-compare-to-positive-number,no-unsafe-unzip,aws-s3-bucket-versioning,anchor-has-content,todo-tag,strict-transport-security,aria-unsupported-elements,no-mime-sniff,prefer-default-last,no-aria-hidden-on-focusable,no-redundant-roles,no-gratuitous-expressions,no-referrer-policy,no-empty-pattern,aria-activedescendant-has-tabindex,sonar-no-invalid-regexp,no-mixed-content,aria-role,no-angular-bypass-sanitization,anchor-precedence,frame-ancestors,slow-regex,stable-tests,fixme-tag,aws-s3-bucket-granted-access,media-has-caption,sonar-no-empty-character-class,new-operator-misuse,non-existent-operator,no-small-switch,aws-iam-privilege-escalation,jsx-no-comment-textnodes,prefer-for-of,aws-sagemaker-unencrypted-notebook,no-self-compare,xml-parser-xxe,default-param-last,sonar-jsx-no-leaked-render,sql-queries,no-global-this,no-array-delete,no-alphabetical-sort,prefer-string-starts-ends-with,require-render-return,no-useless-call,prefer-literal-enum-member,prefer-promise-reject-errors,no-string-refs,no-sequences,no-unsafe,void-use,no-octal,no-hardcoded-ip,comma-or-logical-or-case,existing-groups,label-position,aws-sns-unencrypted-topics,no-unnecessary-type-constraint,super-invocation,aws-ec2-rds-dms-public,no-try-promise,sonar-no-control-regex,prefer-return-this-type,no-empty-alternatives,sonar-no-regex-spaces,no-confusing-non-null-assertion,prefer-regex-literals,no-same-line-conditional,sonar-no-unused-class-component-methods,rules-of-hooks,no-useless-react-setstate,redundant-type-aliases,no-identical-functions,aws-restricted-ip-admin-access,no-hook-setter-in-body,no-element-overwrite,no-equals-in-for-termination,no-sparse-arrays,no-var,no-redundant-jump,public-static-readonly,no-duplicates,no-unthrown-error,no-os-command-from-path,no-collection-size-mischeck,prefer-namespace-keyword,unverified-certificate,disabled-auto-escaping,no-empty-collection,no-duplicate-enum-values,no-empty-group,aws-sqs-unencrypted-queue,prefer-enum-initializers,aws-apigateway-public-api,cors,aws-efs-unencrypted,no-accessor-field-mismatch,insecure-cookie,no-redundant-type-constituents,no-unused-collection,no-extraneous-class,no-invariant-returns,no-case-label-in-switch,os-command,no-table-as-layout,table-header,no-misleading-array-reverse,no-mixed-enums,html-has-lang,no-redundant-assignments,sonar-prefer-optional-chain,no-all-duplicated-branches,no-identical-conditions,no-weak-cipher,no-extra-bind,sonar-prefer-read-only-props,no-constant-binary-expression,no-access-state-in-setstate,no-constructor-return,no-this-in-sfc,hook-use-state,no-delete-var,encryption-secure-mode,no-useless-intersection,no-render-return-value,no-unused-private-class-members,sonar-block-scoped-var,no-empty-function,no-code-after-done,no-unsafe-negation,deprecation,misplaced-loop-counter,no-one-iteration-loop,no-multi-str,function-inside-loop,no-unused-prop-types,no-useless-constructor,no-unneeded-ternary,no-import-assign,no-unescaped-entities,no-redundant-should-component-update,no-unsafe-optional-chaining,no-extend-native,no-danger-with-children,no-duplicated-branches,no-lone-blocks,alt-text,disabled-timeout,bitwise-operators,class-name,code-eval,no-identical-expressions,no-unreachable,no-useless-catch,x-powered-by,no-octal-escape,file-permissions,publicly-writable-directories,no-incomplete-assertions,unnecessary-character-escapes,no-proto,jsx-child-element-spacing,jsx-pascal-case,no-useless-rename,mouse-events-a11y,chai-determinate-assertion,sonar-no-dupe-keys,no-primitive-wrappers,no-exclusive-tests,no-is-mounted,aws-opensearchservice-domain,no-self-assign,aws-iam-all-privileges,no-empty-test-file,no-misused-promises,prefer-spread,no-misused-new,no-invalid-await,no-find-dom-node,no-hardcoded-credentials,aws-rds-unencrypted-databases,content-length,no-clear-text-protocols,no-lonely-if,prefer-object-spread,no-empty,sonar-max-params,hidden-files,iframe-has-title,no-unused-expressions,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg
+09:59:06.484 DEBUG Loaded rules ucfg from /home/ubuntu/jenkins/workspace/hema-multibranch_main/.scannerwork/.sonartmp/bridge-bundle/package/custom-rules18080908008494859241/package
+09:59:06.486 DEBUG Creating linter config
+09:59:06.488 DEBUG Linter config: {"language":"js","fileType":"MAIN"} with alt-text,anchor-has-content,anchor-is-valid,anchor-precedence,argument-type,arguments-order,aria-activedescendant-has-tabindex,aria-proptypes,aria-role,aria-unsupported-elements,array-callback-without-return,autocomplete-valid,aws-apigateway-public-api,aws-ec2-rds-dms-public,aws-ec2-unencrypted-ebs-volume,aws-efs-unencrypted,aws-iam-all-privileges,aws-iam-privilege-escalation,aws-iam-public-access,aws-opensearchservice-domain,aws-rds-unencrypted-databases,aws-restricted-ip-admin-access,aws-s3-bucket-granted-access,aws-s3-bucket-insecure-http,aws-s3-bucket-public-access,aws-s3-bucket-versioning,aws-sagemaker-unencrypted-notebook,aws-sns-unencrypted-topics,aws-sqs-unencrypted-queue,bitwise-operators,call-argument-line,certificate-transparency,class-name,code-eval,cognitive-complexity,comma-or-logical-or-case,concise-regex,confidential-information-logging,constructor-for-side-effects,content-length,content-security-policy,cookie-no-httponly,cors,csrf,default-param-last,default-props-match-prop-types,deprecation,different-types-comparison,disabled-auto-escaping,disabled-resource-integrity,duplicates-in-character-class,empty-string-repetition,encryption-secure-mode,existing-groups,file-permissions,file-uploads,fixme-tag,for-loop-increment-sign,frame-ancestors,function-inside-loop,function-return-type,future-reserved-words,generator-without-yield,hashing,heading-has-content,hidden-files,hook-use-state,iframe-has-title,img-redundant-alt,in-operator-type-error,inconsistent-function-call,index-of-compare-to-positive-number,insecure-cookie,insecure-jwt-token,interactive-supports-focus,jsx-child-element-spacing,jsx-key,jsx-no-comment-textnodes,jsx-no-constructed-context-values,jsx-no-useless-fragment,jsx-pascal-case,label-has-associated-control,label-position,link-with-target-blank,max-switch-cases,misplaced-loop-counter,mouse-events-a11y,new-cap,new-operator-misuse,no-absolute-path,no-access-key,no-accessor-field-mismatch,no-all-duplicated-branches,no-alphabetical-sort,no-angular-bypass-sanitization,no-aria-hidden-on-focusable,no-array-delete,no-array-index-key,no-associative-arrays,no-base-to-string,no-caller,no-case-declarations,no-case-label-in-switch,no-children-prop,no-clear-text-protocols,no-collection-size-mischeck,no-commented-code,no-constant-binary-expression,no-constructor-return,no-danger-with-children,no-dead-store,no-delete-var,no-deprecated-react,no-direct-mutation-state,no-dupe-args,no-duplicated-branches,no-duplicates,no-element-overwrite,no-empty,no-empty-after-reluctant,no-empty-alternatives,no-empty-collection,no-empty-function,no-empty-group,no-empty-pattern,no-equals-in-for-termination,no-extend-native,no-extra-arguments,no-extra-bind,no-extra-boolean-cast,no-extraneous-class,no-find-dom-node,no-global-this,no-globals-shadowing,no-gratuitous-expressions,no-hardcoded-credentials,no-hardcoded-ip,no-hook-setter-in-body,no-identical-conditions,no-identical-expressions,no-identical-functions,no-ignored-return,no-implicit-global,no-in-misuse,no-infinite-loop,no-interactive-element-to-noninteractive-role,no-intrusive-permissions,no-invalid-await,no-invariant-returns,no-inverted-boolean-check,no-ip-forward,no-is-mounted,no-labels,no-literal-call,no-lone-blocks,no-lonely-if,no-loss-of-precision,no-mime-sniff,no-misleading-array-reverse,no-misused-promises,no-mixed-content,no-multi-str,no-mutable-exports,no-nested-assignment,no-nested-conditional,no-nested-functions,no-nested-template-literals,no-new-native-nonconstructor,no-noninteractive-element-interactions,no-noninteractive-element-to-interactive-role,no-noninteractive-tabindex,no-octal,no-octal-escape,no-one-iteration-loop,no-os-command-from-path,no-parameter-reassignment,no-primitive-wrappers,no-proto,no-redeclare,no-redundant-assignments,no-redundant-boolean,no-redundant-jump,no-redundant-roles,no-redundant-should-component-update,no-referrer-policy,no-render-return-value,no-same-line-conditional,no-self-assign,no-self-compare,no-sequences,no-setter-return,no-small-switch,no-sparse-arrays,no-static-element-interactions,no-string-refs,no-table-as-layout,no-this-in-sfc,no-throw-literal,no-try-promise,no-undef-init,no-unenclosed-multiline-block,no-uniq-key,no-unknown-property,no-unneeded-ternary,no-unreachable,no-unsafe,no-unsafe-finally,no-unsafe-negation,no-unsafe-optional-chaining,no-unsafe-unzip,no-unstable-nested-components,no-unthrown-error,no-unused-collection,no-unused-expressions,no-unused-private-class-members,no-unused-prop-types,no-use-of-empty-return-value,no-useless-catch,no-useless-constructor,no-useless-increment,no-useless-react-setstate,no-useless-rename,no-var,no-vue-bypass-sanitization,no-weak-cipher,no-weak-keys,no-with,non-existent-operator,null-dereference,object-alt-content,os-command,post-message,prefer-default-last,prefer-for-of,prefer-object-has-own,prefer-object-spread,prefer-promise-reject-errors,prefer-promise-shorthand,prefer-regex-literals,prefer-single-boolean-return,prefer-spread,prefer-string-starts-ends-with,prefer-tag-over-role,prefer-while,production-debug,prop-types,pseudo-random,publicly-writable-directories,reduce-initial-value,regex-complexity,require-render-return,role-has-required-aria-props,role-supports-aria-props,rules-of-hooks,session-regeneration,single-char-in-character-classes,single-character-alternation,slow-regex,sonar-block-scoped-var,sonar-jsx-no-leaked-render,sonar-max-params,sonar-no-control-regex,sonar-no-dupe-keys,sonar-no-empty-character-class,sonar-no-fallthrough,sonar-no-invalid-regexp,sonar-no-misleading-character-class,sonar-no-regex-spaces,sonar-no-unused-class-component-methods,sonar-no-unused-vars,sonar-prefer-optional-chain,sonar-prefer-regexp-exec,sql-queries,stateful-regex,strict-transport-security,super-invocation,tabindex-no-positive,table-header,table-header-reference,todo-tag,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,unnecessary-character-escapes,unused-import,unused-named-groups,unverified-certificate,unverified-hostname,updated-const-var,updated-loop-counter,use-isnan,valid-typeof,void-use,weak-ssl,x-powered-by,xml-parser-xxe
+09:59:06.488 DEBUG Linter config: {"language":"js","fileType":"TEST"} with assertions-in-tests,chai-determinate-assertion,disabled-timeout,inverted-assertion-arguments,no-code-after-done,no-empty-test-file,no-exclusive-tests,no-ignored-exceptions,no-incomplete-assertions,no-same-argument-assert,stable-tests,test-check-exception
+09:59:06.495 DEBUG Linter config: {"language":"ts","fileType":"MAIN"} with alt-text,anchor-has-content,anchor-precedence,arguments-order,aria-activedescendant-has-tabindex,aria-role,aria-unsupported-elements,autocomplete-valid,aws-apigateway-public-api,aws-ec2-rds-dms-public,aws-ec2-unencrypted-ebs-volume,aws-efs-unencrypted,aws-iam-all-privileges,aws-iam-privilege-escalation,aws-iam-public-access,aws-opensearchservice-domain,aws-rds-unencrypted-databases,aws-restricted-ip-admin-access,aws-s3-bucket-granted-access,aws-s3-bucket-insecure-http,aws-s3-bucket-public-access,aws-s3-bucket-versioning,aws-sagemaker-unencrypted-notebook,aws-sns-unencrypted-topics,aws-sqs-unencrypted-queue,bitwise-operators,call-argument-line,certificate-transparency,class-name,code-eval,cognitive-complexity,comma-or-logical-or-case,concise-regex,confidential-information-logging,constructor-for-side-effects,content-length,content-security-policy,cookie-no-httponly,cors,csrf,default-param-last,deprecation,disabled-auto-escaping,disabled-resource-integrity,duplicates-in-character-class,empty-string-repetition,encryption-secure-mode,existing-groups,file-permissions,file-uploads,fixme-tag,for-loop-increment-sign,frame-ancestors,function-inside-loop,generator-without-yield,hashing,heading-has-content,hidden-files,hook-use-state,html-has-lang,iframe-has-title,index-of-compare-to-positive-number,insecure-cookie,insecure-jwt-token,interactive-supports-focus,jsx-child-element-spacing,jsx-key,jsx-no-comment-textnodes,jsx-no-constructed-context-values,jsx-no-useless-fragment,jsx-pascal-case,label-has-associated-control,label-position,link-with-target-blank,max-switch-cases,media-has-caption,misplaced-loop-counter,mouse-events-a11y,new-cap,new-operator-misuse,no-absolute-path,no-access-key,no-access-state-in-setstate,no-accessor-field-mismatch,no-all-duplicated-branches,no-alphabetical-sort,no-angular-bypass-sanitization,no-aria-hidden-on-focusable,no-array-delete,no-array-index-key,no-associative-arrays,no-caller,no-case-declarations,no-case-label-in-switch,no-clear-text-protocols,no-collection-size-mischeck,no-commented-code,no-confusing-non-null-assertion,no-constant-binary-expression,no-constructor-return,no-danger-with-children,no-dead-store,no-delete-var,no-deprecated-react,no-direct-mutation-state,no-duplicate-enum-values,no-duplicate-in-composite,no-duplicated-branches,no-duplicates,no-element-overwrite,no-empty,no-empty-after-reluctant,no-empty-alternatives,no-empty-collection,no-empty-function,no-empty-group,no-empty-pattern,no-equals-in-for-termination,no-extend-native,no-extra-bind,no-extra-boolean-cast,no-extraneous-class,no-find-dom-node,no-global-this,no-globals-shadowing,no-gratuitous-expressions,no-hardcoded-credentials,no-hardcoded-ip,no-hook-setter-in-body,no-identical-conditions,no-identical-expressions,no-identical-functions,no-ignored-return,no-import-assign,no-in-misuse,no-interactive-element-to-noninteractive-role,no-intrusive-permissions,no-invalid-await,no-invariant-returns,no-inverted-boolean-check,no-ip-forward,no-is-mounted,no-labels,no-literal-call,no-lone-blocks,no-lonely-if,no-mime-sniff,no-misleading-array-reverse,no-misused-new,no-misused-promises,no-mixed-content,no-mixed-enums,no-multi-str,no-mutable-exports,no-nested-assignment,no-nested-conditional,no-nested-functions,no-nested-template-literals,no-noninteractive-element-interactions,no-noninteractive-element-to-interactive-role,no-noninteractive-tabindex,no-octal,no-octal-escape,no-one-iteration-loop,no-os-command-from-path,no-parameter-reassignment,no-primitive-wrappers,no-proto,no-redundant-assignments,no-redundant-boolean,no-redundant-jump,no-redundant-optional,no-redundant-roles,no-redundant-should-component-update,no-redundant-type-constituents,no-referrer-policy,no-render-return-value,no-same-line-conditional,no-self-assign,no-self-compare,no-sequences,no-small-switch,no-sparse-arrays,no-static-element-interactions,no-string-refs,no-table-as-layout,no-this-in-sfc,no-throw-literal,no-try-promise,no-undefined-argument,no-unenclosed-multiline-block,no-unescaped-entities,no-uniq-key,no-unknown-property,no-unnecessary-type-assertion,no-unnecessary-type-constraint,no-unneeded-ternary,no-unreachable,no-unsafe,no-unsafe-finally,no-unsafe-negation,no-unsafe-optional-chaining,no-unsafe-unzip,no-unstable-nested-components,no-unthrown-error,no-unused-collection,no-unused-expressions,no-unused-private-class-members,no-unused-prop-types,no-use-of-empty-return-value,no-useless-call,no-useless-catch,no-useless-constructor,no-useless-increment,no-useless-intersection,no-useless-react-setstate,no-useless-rename,no-var,no-vue-bypass-sanitization,no-weak-cipher,no-weak-keys,non-existent-operator,object-alt-content,os-command,post-message,prefer-as-const,prefer-default-last,prefer-enum-initializers,prefer-for-of,prefer-function-type,prefer-literal-enum-member,prefer-namespace-keyword,prefer-nullish-coalescing,prefer-object-spread,prefer-promise-reject-errors,prefer-promise-shorthand,prefer-regex-literals,prefer-return-this-type,prefer-spread,prefer-string-starts-ends-with,prefer-tag-over-role,prefer-type-guard,prefer-while,production-debug,pseudo-random,public-static-readonly,publicly-writable-directories,reduce-initial-value,redundant-type-aliases,regex-complexity,require-render-return,role-has-required-aria-props,role-supports-aria-props,rules-of-hooks,session-regeneration,single-char-in-character-classes,single-character-alternation,slow-regex,sonar-block-scoped-var,sonar-jsx-no-leaked-render,sonar-max-params,sonar-no-control-regex,sonar-no-dupe-keys,sonar-no-empty-character-class,sonar-no-fallthrough,sonar-no-invalid-regexp,sonar-no-misleading-character-class,sonar-no-regex-spaces,sonar-no-unused-class-component-methods,sonar-prefer-optional-chain,sonar-prefer-read-only-props,sonar-prefer-regexp-exec,sql-queries,stateful-regex,strict-transport-security,super-invocation,tabindex-no-positive,table-header,todo-tag,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,ucfg,unnecessary-character-escapes,unused-import,unused-named-groups,unverified-certificate,unverified-hostname,updated-loop-counter,use-isnan,use-type-alias,void-use,weak-ssl,x-powered-by,xml-parser-xxe
+09:59:06.495 DEBUG Linter config: {"language":"ts","fileType":"TEST"} with assertions-in-tests,chai-determinate-assertion,disabled-timeout,inverted-assertion-arguments,no-code-after-done,no-empty-test-file,no-exclusive-tests,no-ignored-exceptions,no-incomplete-assertions,no-same-argument-assert,stable-tests,test-check-exception
+09:59:06.822 INFO  Found 0 tsconfig.json file(s): []
+09:59:07.157 DEBUG Using generated tsconfig.json file /tmp/tmp-4624-1POcLXoODq5Z
+09:59:07.157 DEBUG Will use AnalysisWithProgram
+09:59:07.157 DEBUG Initializing org.sonar.plugins.javascript.bridge.AnalysisWithProgram
+09:59:07.165 INFO  Creating TypeScript program
+09:59:07.167 INFO  TypeScript configuration file /tmp/tmp-4624-1POcLXoODq5Z
+09:59:07.169 INFO  1 source file to be analyzed
+09:59:17.667 INFO  0/1 files analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+09:59:27.775 INFO  0/1 files analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+09:59:37.947 INFO  0/1 files analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+09:59:48.102 INFO  0/1 files analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+09:59:58.329 INFO  0/1 files analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:00:09.081 INFO  0/1 files analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:00:19.329 INFO  0/1 files analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:00:29.827 INFO  0/1 files analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:00:40.137 INFO  0/1 files analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:00:50.606 INFO  0/1 files analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:01:00.799 INFO  0/1 files analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:01:04.490 DEBUG program from /tmp/tmp-4624-1POcLXoODq5Z with id 1 is created
+10:01:05.078 INFO  Starting analysis with current program
+10:01:05.628 DEBUG Cache strategy set to 'WRITE_ONLY' for file 'target/site/jacoco/jacoco-resources/prettify.js' as current analysis requires all files to be analyzed
+10:01:05.673 DEBUG Analyzing file: file:///home/ubuntu/jenkins/workspace/hema-multibranch_main/target/site/jacoco/jacoco-resources/prettify.js
+10:01:10.831 INFO  1/1 file analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:01:11.330 DEBUG Analyzing file "/home/ubuntu/jenkins/workspace/hema-multibranch_main/target/site/jacoco/jacoco-resources/prettify.js" with linterId "default"
+10:01:20.865 INFO  1/1 file analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:01:30.932 INFO  1/1 file analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:01:40.998 INFO  1/1 file analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:01:51.273 INFO  1/1 file analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:02:01.639 INFO  1/1 file analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:02:11.690 INFO  1/1 file analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:02:18.769 DEBUG Shutting down the worker
+10:02:21.723 INFO  1/1 file analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:02:31.883 INFO  1/1 file analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:02:42.137 INFO  1/1 file analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:02:52.213 INFO  1/1 file analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:04:37.194 INFO  1/1 file analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:05:02.235 INFO  1/1 file analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:05:14.682 INFO  1/1 file analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:05:31.443 INFO  1/1 file analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:05:47.848 INFO  1/1 file analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:06:14.279 INFO  1/1 file analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:06:33.636 INFO  1/1 file analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:08:48.989 INFO  1/1 file analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:09:06.087 INFO  1/1 file analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:09:23.135 INFO  1/1 file analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:10:50.208 INFO  1/1 file analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:11:08.361 INFO  1/1 file analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:11:29.726 INFO  1/1 file analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:11:45.022 INFO  1/1 file analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:11:56.157 INFO  1/1 file analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:12:07.769 INFO  1/1 file analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:12:36.457 INFO  1/1 file analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:13:08.150 INFO  1/1 file analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:13:38.684 INFO  1/1 file analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:14:01.955 INFO  1/1 file analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:14:21.984 INFO  1/1 file analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:15:00.000 INFO  1/1 file analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
+10:18:04.289 INFO  1/1 file analyzed, current file: target/site/jacoco/jacoco-resources/prettify.js
