@@ -1,1 +1,0 @@
-/home/ubuntu/jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/valaxy-sonar-scanner/bin/sonar-scanner

@@ -1,4 +1,0 @@
-hema-multibranch/dev
-hema-multibranch_dev
-hema-multibranch/main
-hema-multibranch_main
