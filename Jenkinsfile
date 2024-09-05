@@ -66,9 +66,17 @@ environment {
             }
         }
     } 
+    stage ("Deploy"){
+        steps {
+            script {
+                echo "---------------------Deployment started----------------------"
+                sh './deploy.sh'
+                echo "-----------------Deployment end-------------------------"
+            }
+        }
+    }
     }
 }
-
 
 
 
