@@ -70,7 +70,7 @@ environment {
         steps {
             script {
                 echo "---------------------Deployment started----------------------"
-                sh 'helm install ttrend ttrend:0.1.0.tgz'
+                sh 'helm install ttrend/ttrend:0.1.0.tgz'
                 echo "-----------------Deployment end-------------------------"
             }
         }
